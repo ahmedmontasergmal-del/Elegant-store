@@ -1,22 +1,39 @@
-# Elegant — Gemstone Discovery Experience
+# Elegant — متجر الأحجار والمجوهرات
 
-A responsive Arabic RTL landing page for the Elegant gemstone brand.
+واجهة متجر عربية RTL متجاوبة لعلامة Elegant، بهوية فاخرة بالأسود العميق والذهبي والعاجي.
 
-## Included
-- Luxury ivory, charcoal and gold visual identity.
-- Three-step personality-inspired gemstone discovery quiz.
-- Animated gemstone reveal and curated product recommendation.
-- WhatsApp inquiry handoff.
+## الموجود في النسخة الحالية
+- صفحة رئيسية وقصة العلامة وأقسام المجموعة والأسئلة الشائعة.
+- كتالوج تجريبي مع تصفية حسب نوع القطعة والبحث.
+- حقيبة تسوق تعمل محليًا وتحفظ محتوياتها في المتصفح.
+- نموذج بيانات طلب ينشئ رسالة مراجعة جاهزة ويفتح واتساب يدويًا.
+- تجربة «اكتشف جوهرك» بثلاثة أسئلة وترشيح حجر/قطعة.
+- تصميم متجاوب للموبايل وسطح المكتب.
+- GitHub Actions workflow للنشر على GitHub Pages.
 
-## Preview locally
-Open `index.html` in a modern browser. No build step is required.
+## معاينة محلية
+افتح `index.html` في متصفح حديث. لا يحتاج المشروع إلى تثبيت حزم أو خطوة build.
 
-## Before launch
-- Replace the demo WhatsApp number `201000000000` in `index.html` with the official business number.
-- Replace sample product imagery and descriptions with real product assets and verified product details.
-- The quiz is an entertainment/editorial experience, not a scientific personality assessment or a claim about gemstone properties.
-- WhatsApp opens a prefilled message only. It does not send messages automatically or implement order confirmation/cancellation.
-- Add privacy, shipping, returns, pricing, and contact information before accepting real orders.
+## إعدادات إلزامية قبل استقبال طلبات حقيقية
+1. افتح `index.html` وابحث عن `WHATSAPP_NUMBER` واستبدل الرقم التجريبي برقم واتساب العمل بصيغة دولية بدون علامة +.
+2. استبدل المنتجات والصور والأسعار التجريبية بمخزون وأسعار Elegant الفعلية.
+3. أضف بيانات الخامات والأحجار والمقاسات وسياسات الشحن والاستبدال والاسترجاع والخصوصية ووسائل التواصل.
+4. اختبر إرسال الطلب من هاتف حقيقي وتأكد أن رسالة واتساب تحتوي البيانات الصحيحة.
+5. لا تضع مفاتيح API أو كلمات مرور أو بيانات دفع داخل ملفات الواجهة.
 
-## Deploy
-Enable GitHub Pages for the repository and select the `main` branch with the root folder, or connect the repository to a hosting provider.
+## النشر عبر GitHub Pages
+- من إعدادات المستودع افتح **Settings → Pages**.
+- تحت **Build and deployment** اختر **GitHub Actions** كمصدر.
+- احفظ الإعداد. سير العمل في `.github/workflows/deploy.yml` سيحاول النشر تلقائيًا عند كل تحديث لفرع `main`.
+- بعد نجاح أول Workflow سيظهر رابط الموقع في **Settings → Pages**، وغالبًا يكون:
+  `https://ahmedmontasergmal-del.github.io/Elegant-store/`
+
+## حدود النسخة
+هذه واجهة Frontend تجريبية وليست نظام تجارة إلكترونية متكاملًا بعد:
+- لا توجد قاعدة بيانات أو لوحة تحكم لإدارة المخزون والطلبات.
+- السلة محفوظة على نفس المتصفح فقط.
+- واتساب يفتح رسالة جاهزة ولا يرسلها تلقائيًا.
+- لا يوجد دفع إلكتروني أو تحقق مخزون أو حسابات عملاء.
+- اختبار الحجر تجربة ترفيهية/تحريرية وليس تقييمًا علميًا للشخصية أو ادعاءً علاجيًا عن الأحجار.
+
+لا تطلق المتجر تجاريًا قبل استكمال الإعدادات والتحقق من بيانات المنتجات والسياسات.
