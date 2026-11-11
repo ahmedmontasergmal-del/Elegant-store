@@ -89,12 +89,85 @@ body{
  .storyimg{box-shadow:10px 10px 0 #d8ebe5}
 }
 
-</style>
+
+/* ELEGANT — gemstone atelier art direction */
+:root{
+ --ink:#123f40;--dark:#082f32;--gold:#b99a62;--gold2:#d8c18d;
+ --cream:#e6f3ef;--paper:#f8fbf9;--muted:#718985;--line:#d6e7e2;
+ --teal-deep:#082f32;--teal:#087f80;--aqua:#4fc5bd;--ice:#dff4ef;
+}
+body{
+ background-color:#f8fbf9;
+ background-image:
+  radial-gradient(ellipse at 8% 16%,rgba(36,151,145,.10),transparent 28%),
+  radial-gradient(ellipse at 92% 56%,rgba(32,127,122,.07),transparent 30%),
+  repeating-linear-gradient(128deg,transparent 0 145px,rgba(65,133,126,.035) 146px,transparent 148px);
+}
+.announcement{background:#082f32;color:#d8f3ed}
+.nav{background:rgba(249,253,251,.96);border-bottom:1px solid #cfe3dd}
+.brand{color:#087f80;text-shadow:0 4px 18px #087f8020}
+.hero{
+ min-height:620px;
+ background:radial-gradient(ellipse at 78% 45%,#176c6b 0,#0c4547 42%,#082f32 78%);
+ position:relative;
+}
+.hero:after{content:"";position:absolute;inset:14px;border:1px solid #b9ded033;pointer-events:none}
+.hero-copy{z-index:2;padding-right:13%}
+.hero-copy:before{border-color:#b8e5dc55;inset:35px 8% 35px 0}
+.hero h1{font-size:clamp(48px,6vw,82px);letter-spacing:-1.5px}
+.hero h1 span{color:#67d2c6;text-shadow:0 4px 28px #55c8bd35}
+.hero p{font-size:14px;max-width:440px;color:#d5e9e4}
+.hero-art{
+ min-height:620px;position:relative;
+ background-image:
+  linear-gradient(90deg,#082f32 0%,rgba(8,47,50,.15) 24%,rgba(8,47,50,0) 55%),
+  url('https://images.unsplash.com/photo-1780619692305-133bfacda226?auto=format&fit=crop&fm=jpg&q=85&w=1800');
+ background-position:center;background-size:cover;
+}
+.hero-art:after{
+ content:"";position:absolute;width:210px;height:210px;right:8%;bottom:8%;
+ border:1px solid #d8c18d88;transform:rotate(45deg);
+ box-shadow:0 0 0 16px #ffffff08,0 0 0 32px #ffffff05;
+}
+.eyebrow{letter-spacing:3px}
+.goldbtn,.lightbtn{background:linear-gradient(135deg,#e0d0a7,#b99a62);color:#153f40;box-shadow:0 12px 28px #061f2038}
+.goldbtn:hover,.lightbtn:hover{background:#eadbb9}
+.trust{background:linear-gradient(110deg,#eaf5f1,#dceee9,#eff7f4);border-block:1px solid #d3e7e0}
+.trust strong{color:#164e4d}
+.sectionhead h2{color:#123f40;font-size:42px}
+.sectionhead h2:after{content:"";display:block;width:54px;height:2px;margin:15px auto 0;background:linear-gradient(90deg,#b99a62,#38aaa2)}
+.sectionhead p{color:#718985}
+.card{border:1px solid #dcebe6;border-radius:2px;overflow:hidden;background:#fff;box-shadow:0 12px 32px #164c4710}
+.cardimg{height:300px;background:linear-gradient(135deg,#e1f0eb,#c4e2db)}
+.cardimg:after{content:"";position:absolute;inset:12px;border:1px solid #ffffff88;pointer-events:none}
+.cardimg img{filter:saturate(1.08);mix-blend-mode:normal}
+.card h3{color:#143f40}
+.cardmeta{color:#168b86;letter-spacing:2px}
+.badge{background:#e1f2ed;color:#126c69;border:1px solid #c4e3da}
+.add{background:#0c4c4c}
+.add:hover{background:#138b85}
+.discovery{background:radial-gradient(ellipse at 80% 20%,#1c7773,#0b3c3e 65%,#082f32)}
+.discovery-box{border:1px solid #c6e6dc88;background:linear-gradient(145deg,#ffffff13,#ffffff04);backdrop-filter:blur(5px)}
+.discovery-box .spark{font-size:48px;text-shadow:0 0 22px #4fc5bd80}
+.storyimg{background-image:url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=90');border:7px solid #e8f4ef;box-shadow:18px 18px 0 #b9ddd4}
+.benefits{background:linear-gradient(120deg,#e5f2ed,#f5faf7);border-block:1px solid #d7e8e2}
+.benefit .symbol{color:#168b86;font-size:29px}
+.newsletter{background:linear-gradient(120deg,#d7ece6,#eff7f3 55%,#d0e8e1)}
+.footer{background:radial-gradient(ellipse at 80% 0%,#155b59,#082f32 70%)}
+.panel{border-top:3px solid #168b86}
+@media(max-width:760px){
+ .hero{min-height:auto}
+ .hero-art{min-height:360px;order:1;background-position:center}
+ .hero-copy{padding:45px 9%;order:2}
+ .hero h1{font-size:53px}
+ .cardimg{height:205px}
+}
+\n</style>
 </head>
 <body>
 <div class="announcement">اختيارات استثنائية • تفاصيل تصنع الفرق • ELEGANT</div>
 <header class="nav"><a class="brand" href="#">ELEGANT</a><nav class="navlinks"><a href="#shop">تسوقي المجموعة</a><a href="#discovery">اكتشف جوهرك</a><a href="#story">حكايتنا</a><a href="#faq">الأسئلة الشائعة</a></nav><div class="navtools"><button class="iconbtn" onclick="openCart()">حقيبتي <span class="cartcount" id="cartCount">0</span></button></div></header>
-<section class="hero"><div class="hero-copy"><span class="eyebrow">THE ART OF YOUR OWN STORY</span><h1>جمالك…<br>يحكي <span>حكايتك.</span></h1><p>قطع مختارة بعناية، وأحجار كريمة تحمل ألوانًا وتفاصيل لا تشبه سواها. اكتشفي ما يعبّر عنك، واجعلي كل تفصيلة توقيعك الخاص.</p><a class="goldbtn" href="#shop">اكتشفي المجموعة　↙</a></div><div class="hero-art" aria-label="صورة مجوهرات أنيقة"></div></section>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">THE ART OF YOUR OWN STORY</span><h1>عالم من<br><span>الأحجار الكريمة.</span></h1><p>ألوان آسرة، أحجار بتفاصيل فريدة، ومجوهرات صُممت لتكون أكثر من مجرد قطعة… اختاري الحجر الذي يعبّر عنك.</p><a class="goldbtn" href="#shop">اكتشفي المجموعة　↙</a></div><div class="hero-art" aria-label="صورة مجوهرات أنيقة"></div></section>
 <div class="trust"><div><strong>✧ اختيارات منتقاة</strong><small>تفاصيل نختارها بعناية</small></div><div><strong>◇ تجربة تسوق بسيطة</strong><small>من الاكتشاف حتى الطلب</small></div><div><strong>♡ لمستك الخاصة</strong><small>قطعة تعبّر عن أسلوبك</small></div></div>
 <section class="section" id="shop"><div class="sectionhead"><span class="eyebrow">THE COLLECTION</span><h2>مختارات Elegant</h2><p>تصفحي مجموعة تجريبية من القطع المستوحاة من جمال الأحجار الطبيعية. تفاصيل المنتجات والأسعار الحالية للعرض فقط لحين استبدالها ببياناتك الفعلية.</p></div><div class="catalog-tools"><div class="filters"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="necklace">قلادات</button><button class="filter" data-filter="ring">خواتم</button><button class="filter" data-filter="bracelet">أساور</button></div><input class="search" id="search" placeholder="ابحثي عن قطعة أو حجر..." oninput="renderProducts()"></div><div class="grid" id="products"></div></section>
 <section class="discovery" id="discovery"><div class="discovery-copy"><span class="eyebrow">YOUR SIGNATURE STONE</span><h2>هناك حجر…<br>يشبهك أنتِ.</h2><p>ثلاث خطوات قصيرة تساعدك على اكتشاف حجر مستوحى من اختياراتك وشخصيتك. ليست إجابة علمية، بل تجربة ممتعة لاكتشاف ذوقك.</p></div><div class="discovery-box"><div class="spark">✧</div><h3>اكتشف جوهرك</h3><p>اختاري ما يشبهك، ودعي Elegant تكشف لك عن حجر قد يصبح جزءًا من حكايتك.</p><button class="lightbtn" onclick="startQuiz()">ابدئي التجربة</button></div></section>
