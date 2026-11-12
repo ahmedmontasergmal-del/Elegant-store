@@ -553,6 +553,33 @@ body:before{
  }
 }
 
+
+/* ELEGANT INTERACTION + CINEMATIC ENTRANCE */
+html{scroll-behavior:smooth}
+body{overflow-x:hidden}
+.hero-copy,.hero-art{opacity:0;animation:elegantEnter .95s cubic-bezier(.2,.75,.25,1) forwards}
+.hero-copy{animation-delay:.12s}.hero-art{animation-delay:.28s}
+@keyframes elegantEnter{from{opacity:0;transform:translateY(24px) scale(.985)}to{opacity:1;transform:none}}
+.reveal-ready{opacity:0;transform:translateY(26px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+.reveal-ready.is-visible{opacity:1;transform:none}
+.cardimg,.rough-tile,.storyimg,.hero-art{cursor:zoom-in}
+.cardimg img,.rough-tile img{transition:transform .75s cubic-bezier(.2,.7,.2,1),filter .5s}
+.cardimg:active img,.rough-tile:active img{transform:scale(1.045)}
+.cardimg:focus-visible,.rough-tile:focus-visible,.hero-art:focus-visible,.storyimg:focus-visible{outline:2px solid #d8c18d;outline-offset:4px}
+.image-hint{position:absolute;bottom:14px;left:14px;z-index:2;padding:7px 11px;background:#061f20c9;color:#f6edda;font-size:10px;letter-spacing:.6px;opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none}
+.cardimg:hover .image-hint,.rough-tile:hover .image-hint,.hero-art:hover .image-hint{opacity:1;transform:none}
+#elegantLightbox{position:fixed;inset:0;z-index:120;background:rgba(2,13,15,.94);display:none;align-items:center;justify-content:center;padding:22px;backdrop-filter:blur(12px)}
+#elegantLightbox.open{display:flex;animation:lightFade .25s ease}
+@keyframes lightFade{from{opacity:0}to{opacity:1}}
+.lightbox-inner{position:relative;width:min(980px,100%);height:min(86vh,760px);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px}
+#elegantLightbox img{max-width:100%;max-height:calc(100% - 55px);object-fit:contain;box-shadow:0 20px 80px #0008}
+.lightbox-caption{color:#e9dfca;font-size:12px;text-align:center;letter-spacing:1px}
+.lightbox-close,.lightbox-prev,.lightbox-next{position:absolute;border:1px solid #d8c18d66;background:#0b292bcc;color:#f5ead3;width:46px;height:46px;border-radius:50%;font-size:24px;display:grid;place-items:center;cursor:pointer;transition:.2s}
+.lightbox-close:hover,.lightbox-prev:hover,.lightbox-next:hover{background:#c4a56b;color:#102f30}
+.lightbox-close{top:0;left:0}.lightbox-prev{right:0;top:50%;transform:translateY(-50%)}.lightbox-next{left:0;top:50%;transform:translateY(-50%)}
+@media(max-width:760px){#elegantLightbox{padding:12px}.lightbox-inner{height:82vh}.lightbox-close,.lightbox-prev,.lightbox-next{width:42px;height:42px;background:#0b292beF}.lightbox-close{top:0;left:0}.lightbox-prev{right:0}.lightbox-next{left:0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.hero-copy,.hero-art{opacity:1}}
+
 </style>
 </head>
 <body>
@@ -583,6 +610,17 @@ body:before{
 <div class="overlay" id="cartOverlay" onclick="outsideClose(event,'cartOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('cartOverlay')">×</button><span class="eyebrow" style="color:#9b7c48">YOUR SELECTION</span><h2>حقيبة التسوق</h2><div id="cartLines"></div><div class="total"><span>الإجمالي التقديري</span><span id="cartTotal">0 ج.م</span></div><button class="fullbtn" onclick="openCheckout()">متابعة لإرسال الطلب</button><p class="mutednote">الأسعار تجريبية وغير ملزمة. لن يتم إرسال أي شيء تلقائيًا.</p></div></div>
 <div class="overlay" id="checkoutOverlay" onclick="outsideClose(event,'checkoutOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('checkoutOverlay')">×</button><span class="eyebrow" style="color:#9b7c48">ORDER DETAILS</span><h2>بيانات الطلب</h2><form id="checkoutForm" onsubmit="submitOrder(event)"><label class="field">الاسم بالكامل<input name="name" required autocomplete="name" placeholder="اسمك"></label><label class="field">رقم الموبايل<input name="phone" required type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label class="field">المحافظة والمنطقة<input name="area" required placeholder="مثال: الإسكندرية - سموحة"></label><label class="field">العنوان بالتفصيل<textarea name="address" required placeholder="الشارع ورقم العقار وأي تفاصيل تساعد في التوصيل"></textarea></label><label class="field">ملاحظات إضافية<textarea name="notes" placeholder="المقاس أو اللون أو أي استفسار (اختياري)"></textarea></label><button class="fullbtn" type="submit">متابعة إلى واتساب</button></form><p class="mutednote">ستفتح رسالة مراجعة في واتساب. راجعي البيانات بنفسك قبل الضغط على إرسال.</p></div></div>
 <div class="overlay" id="quizOverlay" onclick="outsideClose(event,'quizOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('quizOverlay')">×</button><div id="quizContent"></div></div></div><div class="toast" id="toast"></div>
+
+<div id="elegantLightbox" role="dialog" aria-modal="true" aria-label="عارض الصور" onclick="if(event.target===this)closeElegantLightbox()">
+ <div class="lightbox-inner">
+  <button class="lightbox-close" type="button" aria-label="إغلاق" onclick="closeElegantLightbox()">×</button>
+  <button class="lightbox-prev" type="button" aria-label="الصورة السابقة" onclick="stepElegantLightbox(-1)">›</button>
+  <img id="elegantLightboxImage" alt="">
+  <div class="lightbox-caption" id="elegantLightboxCaption" aria-live="polite"></div>
+  <button class="lightbox-next" type="button" aria-label="الصورة التالية" onclick="stepElegantLightbox(1)">‹</button>
+ </div>
+</div>
+
 <script>
 const WHATSAPP_NUMBER='201000000000'; // استبدله برقم واتساب العمل بصيغة دولية بدون +
 const products=[
@@ -615,5 +653,70 @@ function renderQuiz(){const q=quiz[quizIndex];document.getElementById('quizConte
 function chooseQuiz(i){quizAnswers[quizIndex]=i;renderQuiz()}
 function nextQuiz(){if(quizAnswers[quizIndex]===undefined)return;if(quizIndex<2){quizIndex++;renderQuiz();return}const score=quizAnswers.reduce((a,b)=>a+b,0);const stone=score<=2?{n:'الأميثيست · Amethyst',e:'💜',d:'يرتبط هذا الحجر في تقاليد ورموز الأحجار بالصفاء والتأمل. اختيارك يميل إلى الهدوء والعمق والجمال الذي لا يحتاج إلى ضجيج.',p:1}:score<=4?{n:'الياقوت · Ruby',e:'❤️',d:'ارتبط الياقوت بالشغف والقوة والحضور. اختياراتك تعكس شخصية تحب التعبير عن نفسها بثقة وجرأة.',p:2}:{n:'الزمرد · Emerald',e:'💚',d:'يرتبط الزمرد بالتجدد والطبيعة والتوازن. اختياراتك تميل إلى الأصالة والحرية والجمال بروحه الخاصة.',p:3};const p=products[stone.p-1];document.getElementById('quizContent').innerHTML='<div class="quizstep"><span class="eyebrow" style="color:#9b7c48">YOUR ELEGANT MATCH</span><div class="revealgem">'+stone.e+'</div><h2>'+stone.n+'</h2><p style="font-size:12px;line-height:2;color:#746b5e">'+stone.d+'</p><p style="font-size:11px">ترشيحنا لك: <b>'+p.name+'</b></p><button class="fullbtn" onclick="addToCart('+p.id+');closeOverlay(\'quizOverlay\');document.getElementById(\'shop\').scrollIntoView({behavior:\'smooth\'})">أضيفي الترشيح إلى حقيبتك</button><button class="remove" onclick="startQuiz()">إعادة التجربة</button></div>'}
 renderProducts();saveCart();
+
+/* Tap-to-explore image viewer + smooth section reveals */
+let elegantLightboxItems=[],elegantLightboxIndex=0,elegantPreviousFocus=null;
+function collectElegantImages(){
+ const items=[];
+ document.querySelectorAll('.cardimg img,.rough-tile img').forEach(el=>{
+  if(el.src)items.push({src:el.currentSrc||el.src,alt:el.alt||'Elegant collection'});
+ });
+ return items;
+}
+function openElegantLightbox(src,caption){
+ elegantLightboxItems=collectElegantImages();
+ let index=elegantLightboxItems.findIndex(x=>x.src===src);
+ if(index<0){elegantLightboxItems.unshift({src,alt:caption||'Elegant'});index=0}
+ elegantLightboxIndex=index;elegantPreviousFocus=document.activeElement;
+ showElegantLightbox();
+}
+function showElegantLightbox(){
+ const item=elegantLightboxItems[elegantLightboxIndex];if(!item)return;
+ const img=document.getElementById('elegantLightboxImage');
+ img.src=item.src;img.alt=item.alt;
+ document.getElementById('elegantLightboxCaption').textContent=(item.alt||'Elegant')+'  ·  '+(elegantLightboxIndex+1)+' / '+elegantLightboxItems.length;
+ document.getElementById('elegantLightbox').classList.add('open');
+ document.body.style.overflow='hidden';
+ document.querySelector('.lightbox-close').focus();
+}
+function stepElegantLightbox(direction){
+ if(!elegantLightboxItems.length)return;
+ elegantLightboxIndex=(elegantLightboxIndex+direction+elegantLightboxItems.length)%elegantLightboxItems.length;
+ showElegantLightbox();
+}
+function closeElegantLightbox(){
+ document.getElementById('elegantLightbox').classList.remove('open');
+ document.body.style.overflow='';
+ if(elegantPreviousFocus&&elegantPreviousFocus.focus)elegantPreviousFocus.focus();
+}
+document.addEventListener('click',e=>{
+ const image=e.target.closest('.cardimg img,.rough-tile img');
+ if(image){e.preventDefault();openElegantLightbox(image.currentSrc||image.src,image.alt);return}
+ const hero=e.target.closest('.hero-art');
+ if(hero){openElegantLightbox('./Jewelry_product_photography_inst%E2%80%A6_c1674278_2K.jpg','ELEGANT · الواجهة الرئيسية');return}
+ const story=e.target.closest('.storyimg');
+ if(story){openElegantLightbox('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=90','ELEGANT · حكاية التفاصيل')}
+});
+document.addEventListener('keydown',e=>{
+ if(!document.getElementById('elegantLightbox').classList.contains('open'))return;
+ if(e.key==='Escape')closeElegantLightbox();
+ if(e.key==='ArrowRight')stepElegantLightbox(-1);
+ if(e.key==='ArrowLeft')stepElegantLightbox(1);
+});
+function initElegantReveals(){
+ const targets=document.querySelectorAll('.trust,.sectionhead,.card,.discovery-copy,.discovery-box,.rough-tile,.storycopy,.storyimg,.benefit,.faq,.newsletter');
+ targets.forEach(el=>el.classList.add('reveal-ready'));
+ if(!('IntersectionObserver'in window)){targets.forEach(el=>el.classList.add('is-visible'));return}
+ const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}});
+ },{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+ targets.forEach(el=>observer.observe(el));
+}
+document.querySelectorAll('.hero-art,.storyimg').forEach(el=>{el.setAttribute('role','button');el.setAttribute('tabindex','0');el.setAttribute('aria-label','اضغط لعرض الصورة بحجم أكبر')});
+document.addEventListener('keydown',e=>{
+ if((e.key==='Enter'||e.key===' ')&&e.target.matches('.hero-art,.storyimg')){e.preventDefault();e.target.click()}
+});
+initElegantReveals();
+
 </script>
 </body></html>
