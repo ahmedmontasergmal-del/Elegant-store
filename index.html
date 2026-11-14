@@ -162,7 +162,7 @@ body{
  .hero h1{font-size:53px}
  .cardimg{height:205px}
 }
-\n
+
 /* ELEGANT — refined luxury system */
 :root{
  --ink:#103b3c;--dark:#062f32;--gold:#c4a56b;--gold2:#e4d2a6;
@@ -761,7 +761,11 @@ const products=[
 {id:5,name:'خاتم حجر القمر',stone:'MOONSTONE',category:'ring',price:1950,tag:'قطعة هادئة',desc:'بريق هادئ ولمسة مختلفة.',img:'https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=850&q=85'},
 {id:6,name:'سوار بتفاصيل لامعة',stone:'SIGNATURE',category:'bracelet',price:1750,tag:'هدية جميلة',desc:'قطعة يومية بتفاصيل رقيقة.',img:'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=850&q=85'}
 ];
-let cart=JSON.parse(localStorage.getItem('elegant-cart')||'[]'),activeFilter='all',quizIndex=0,quizAnswers=[];\nlet favoriteIds=JSON.parse(localStorage.getItem('elegant-favorites')||'[]'),showFavorites=false;\nfunction saveFavorites(){localStorage.setItem('elegant-favorites',JSON.stringify(favoriteIds));document.getElementById('favoritesCount').textContent=favoriteIds.length}\nfunction toggleFavorite(id){favoriteIds=favoriteIds.includes(id)?favoriteIds.filter(x=>x!==id):[...favoriteIds,id];saveFavorites();renderProducts();toast(favoriteIds.includes(id)?'تم حفظ القطعة في المفضلة':'تمت إزالة القطعة من المفضلة')}\nfunction toggleFavoritesView(){showFavorites=!showFavorites;const b=document.getElementById('favoritesToggle');b.classList.toggle('active',showFavorites);b.setAttribute('aria-pressed',String(showFavorites));b.innerHTML=(showFavorites?'♥ المفضلة':'♡ المفضلة')+' <span class="cartcount" id="favoritesCount">'+favoriteIds.length+'</span>';document.getElementById('shop').scrollIntoView({behavior:'smooth'});renderProducts()}
+let cart=JSON.parse(localStorage.getItem('elegant-cart')||'[]'),activeFilter='all';
+let favoriteIds=JSON.parse(localStorage.getItem('elegant-favorites')||'[]'),showFavorites=false;
+function saveFavorites(){localStorage.setItem('elegant-favorites',JSON.stringify(favoriteIds));document.getElementById('favoritesCount').textContent=favoriteIds.length}
+function toggleFavorite(id){favoriteIds=favoriteIds.includes(id)?favoriteIds.filter(x=>x!==id):[...favoriteIds,id];saveFavorites();renderProducts();toast(favoriteIds.includes(id)?'تم حفظ القطعة في المفضلة':'تمت إزالة القطعة من المفضلة')}
+function toggleFavoritesView(){showFavorites=!showFavorites;const b=document.getElementById('favoritesToggle');b.classList.toggle('active',showFavorites);b.setAttribute('aria-pressed',String(showFavorites));b.innerHTML=(showFavorites?'♥ المفضلة':'♡ المفضلة')+' <span class="cartcount" id="favoritesCount">'+favoriteIds.length+'</span>';document.getElementById('shop').scrollIntoView({behavior:'smooth'});renderProducts()}
 const money=n=>new Intl.NumberFormat('ar-EG').format(n)+' ج.م';
 function renderProducts(){const term=(document.getElementById('search').value||'').trim().toLowerCase();const list=products.filter(p=>(activeFilter==='all'||p.category===activeFilter)&&(!term||(p.name+' '+p.stone+' '+p.desc).toLowerCase().includes(term))&&(!showFavorites||favoriteIds.includes(p.id)));document.getElementById('products').innerHTML=list.length?list.map(p=>'<article class="card"><div class="cardimg"><img loading="lazy" src="'+p.img+'" alt="'+p.name+'"><span class="badge">'+p.tag+'</span><button class="favorite-btn '+(favoriteIds.includes(p.id)?'is-favorite':'')+'" type="button" onclick="toggleFavorite('+p.id+')" aria-label="'+(favoriteIds.includes(p.id)?'إزالة من المفضلة':'أضيفي للمفضلة')+'" aria-pressed="'+favoriteIds.includes(p.id)+'">'+(favoriteIds.includes(p.id)?'♥':'♡')+'</button></div><div class="cardbody"><span class="cardmeta">'+p.stone+'</span><h3>'+p.name+'</h3><p class="carddesc">'+p.desc+'</p><div class="cardfoot"><span class="price">'+money(p.price)+'</span><button class="add" onclick="addToCart('+p.id+')">أضيفي للحقيبة +</button></div></div></article>').join(''):'<div class="empty">'+(showFavorites?'لم تحفظي أي قطعة في المفضلة بعد. اضغطي ♡ على القطعة التي تعجبك.':'لا توجد نتائج مطابقة. جرّبي كلمة أخرى.')+'</div>'}
 document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeFilter=b.dataset.filter;renderProducts()}));
