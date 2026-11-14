@@ -581,145 +581,6 @@ body{overflow-x:hidden}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.hero-copy,.hero-art{opacity:1}}
 
 </style>
-</head>
-<body>
-<div class="announcement">اختيارات استثنائية • تفاصيل تصنع الفرق • ELEGANT</div>
-<header class="nav"><a class="brand" href="#">ELEGANT</a><nav class="navlinks"><a href="#shop">تسوقي المجموعة</a><a href="#discovery">اكتشف جوهرك</a><a href="#stones">عالم الأحجار</a><a href="#story">حكايتنا</a><a href="#faq">الأسئلة الشائعة</a></nav><div class="navtools"><button class="iconbtn" id="favoritesToggle" onclick="toggleFavoritesView()" aria-pressed="false">♡ المفضلة <span class="cartcount" id="favoritesCount">0</span></button><button class="iconbtn" onclick="openCart()">حقيبتي <span class="cartcount" id="cartCount">0</span></button></div></header>
-<section class="hero"><div class="hero-copy"><span class="eyebrow">YOUR STYLE. YOUR SIGNATURE.</span><h1>تألّقي<br><span>على طريقتكِ.</span></h1><p>تفاصيل تلفت النظر، ولمسات مستوحاة من سحر الأحجار… اختاري قطعة تضيف إلى إطلالتك حضورًا يليق بذوقك وتحكي شيئًا منك.</p><a class="goldbtn" href="#shop">اكتشفي المجموعة　↙</a></div><div class="hero-art" aria-label="صورة مجوهرات أنيقة"></div></section>
-<div class="trust"><div><strong>✧ اختيارات منتقاة</strong><small>تفاصيل نختارها بعناية</small></div><div><strong>◇ تجربة تسوق بسيطة</strong><small>من الاكتشاف حتى الطلب</small></div><div><strong>♡ لمستك الخاصة</strong><small>قطعة تعبّر عن أسلوبك</small></div></div>
-<section class="section" id="shop"><div class="sectionhead"><span class="eyebrow">THE COLLECTION</span><h2>قطع تختارها ذائقتك</h2><p>اكتشفي تشكيلتنا من القلادات والخواتم والأساور، واختاري التفاصيل الأقرب إلى أسلوبك. المنتجات والأسعار المعروضة حاليًا تجريبية، وسيتم تحديثها قبل استقبال الطلبات الفعلية.</p></div><div class="catalog-tools"><div class="filters"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="necklace">قلادات</button><button class="filter" data-filter="ring">خواتم</button><button class="filter" data-filter="bracelet">أساور</button></div><input class="search" id="search" placeholder="ابحثي عن قطعة أو حجر..." oninput="renderProducts()"></div><div class="grid" id="products"></div></section>
-<section class="discovery" id="discovery"><div class="discovery-copy"><span class="eyebrow">YOUR SIGNATURE STONE</span><h2>هناك حجر…<br>يشبهك أنتِ.</h2><p>أجيبي عن ثلاثة أسئلة خفيفة لنقترح عليكِ حجرًا يتماشى مع ذوقك. تجربة ترفيهية للإلهام واكتشاف اختيارات جديدة.</p></div><div class="discovery-box"><div class="spark">✧</div><h3>اكتشف جوهرك</h3><p>ذوقك له بصمته الخاصة. ابدئي التجربة واكتشفي ترشيح Elegant الأقرب إلى اختياراتك.</p><button class="lightbtn" onclick="startQuiz()">ابدئي التجربة</button></div></section>
-
-<section class="rough-gallery" id="stones">
- <div class="sectionhead"><span class="eyebrow">NATURE, UNFILTERED</span><h2>سحر التفاصيل… من الطبيعة</h2><p>لكل حجر تكوين يميّزه، ولكل لون سحره الخاص. شاهدي إلهامنا من تفاصيل البلورات والأحجار الخام، حيث تبدأ حكاية الجمال.</p></div>
- <div class="rough-grid">
-  <figure class="rough-tile"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Raw_amethyst_crystals_1.jpg?width=1400" alt="تجمع بلورات أميثيست خام بنفسجية"><figcaption class="rough-caption">AMETHYST GEODE<small>VIOLET CRYSTAL FORMATION</small></figcaption></figure>
-  <figure class="rough-tile"><img loading="lazy" src="https://www.nmns.edu.tw/export/sites/nmns/ch/research/specimen/featured/.galleries/collections/exb14/Emerald.jpg" alt="بلورة زمرد خام داخل الصخر"><figcaption class="rough-caption">RAW EMERALD<small>GREEN BERYL IN MATRIX</small></figcaption></figure>
-  <figure class="rough-tile"><img loading="lazy" src="https://www.folkmarketgems.com/cdn/shop/files/chitral-emerald-specimen-sale.webp?v=1771188465&width=1600" alt="عينة زمرد خام بتكوين بلوري طبيعي"><figcaption class="rough-caption">NATURAL TEXTURE<small>UNCUT GEMSTONE</small></figcaption></figure>
-  <figure class="rough-tile"><img loading="lazy" src="https://img-edg.joomcdn.net/1cd0b335024c3fb1d202b896830345f60fe67d7b_original.jpeg" alt="بلورات أميثيست بنفسجية بتفاصيل شفافة"><figcaption class="rough-caption">CRYSTAL DETAILS<small>LIGHT · DEPTH · COLOR</small></figcaption></figure>
-  <figure class="rough-tile"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/2508/2556/articles/Amethyst.jpg?v=1675700237" alt="مجموعة أحجار أميثيست خام متداخلة"><figcaption class="rough-caption">THE RAW BEAUTY<small>INSPIRED BY NATURE</small></figcaption></figure>
- </div>
- <p class="rough-note">صور استلهامية لعينات أحجار خام؛ لا تمثل بالضرورة الأحجار أو القطع المتاحة للبيع في المجموعة الحالية.</p>
-</section>
-
-<section class="section story" id="story"><div class="storyimg"></div><div class="storycopy"><span class="eyebrow" style="color:#9b7c48">A NOTE ABOUT ELEGANCE</span><h2>أناقة تبدأ من تفصيلة</h2><p>في Elegant نؤمن أن الأناقة الحقيقية تسكن التفاصيل؛ في لمعة تلفت الانتباه، وتصميم ينسجم مع أسلوبك، وقطعة تختارينها لأنها تشبهك. نمنحك مساحة لاكتشاف مجوهرات تضيف لمسة راقية لكل لحظة.</p><p>اختاري ما يعبّر عنك، وتعرّفي على تفاصيل الخامة والحجر والمقاس قبل تأكيد طلبك. لأن اختيارك يستحق أن يكون واضحًا ومميزًا.</p><a class="goldbtn" href="#shop">تصفحي المجموعة</a></div></section>
-<section class="benefits"><div class="benefit"><div class="symbol">✧</div><h3>تفاصيل على ذوقك</h3><p>تشكيلة متنوعة تساعدك على العثور على لمستك الخاصة.</p></div><div class="benefit"><div class="symbol">◇</div><h3>كل التفاصيل تهم</h3><p>نوضح لكِ تفاصيل القطعة والخامة والمقاس قبل تأكيد الطلب.</p></div><div class="benefit"><div class="symbol">♡</div><h3>نحن على تواصل</h3><p>تواصلي معنا عبر واتساب للاستفسار ومراجعة طلبك.</p></div></section>
-<section class="section" id="faq"><div class="sectionhead"><span class="eyebrow">GOOD TO KNOW</span><h2>أسئلة شائعة</h2><p>إجابات سريعة لتكون تجربتك أوضح وأسهل.</p></div><div class="faq"><details><summary>هل الأسعار والمنتجات المعروضة نهائية؟</summary><p>لا، هذه نسخة عرض أولية. يجب استبدال أسماء المنتجات والصور والأسعار بمخزون Elegant الفعلي قبل استقبال طلبات حقيقية.</p></details><details><summary>هل الأحجار المعروضة طبيعية ومعتمدة؟</summary><p>الموقع لا يقدم أي ادعاء عن طبيعة أو مصدر أو اعتماد الأحجار التجريبية. يرجى طلب بيانات الحجر وشهادة الفحص إن توفرت من فريق المتجر قبل الشراء.</p></details><details><summary>كيف أرسل طلبي؟</summary><p>أضيفي القطع إلى الحقيبة، ثم أدخلي بيانات التواصل والعنوان. سيفتح واتساب برسالة جاهزة لتراجعيها وترسليها بنفسك.</p></details><details><summary>هل يمكنني تعديل أو إلغاء الطلب؟</summary><p>التعديل أو الإلغاء يتم بالتواصل المباشر مع المتجر عبر واتساب في هذه النسخة. لا يوجد حتى الآن نظام طلبات أو لوحة إدارة متصلة بقاعدة بيانات.</p></details></div></section>
-<section class="newsletter"><span class="eyebrow" style="color:#987847">A LITTLE NOTE FROM ELEGANT</span><h2>خليكي قريبة من جديدنا</h2><p>اتركي بريدك لبدء رسالة واتساب مع فريق Elegant، وكوني من أوائل من يعرفون جديد المجموعة.</p><form onsubmit="newsletter(event)"><input id="newsEmail" type="email" required placeholder="بريدك الإلكتروني"><button>تواصل</button></form></section>
-<footer class="footer"><div class="footergrid"><div><span class="brand">ELEGANT</span><p>مجوهرات بتفاصيل راقية، واختيارات تعبّر عن ذوقك. اكتشفي بصمتك الخاصة مع Elegant.</p></div><div><h4>روابط سريعة</h4><p><a href="#shop">المجموعة</a><br><a href="#discovery">اكتشف جوهرك</a><br><a href="#story">حكايتنا</a></p></div><div><h4>تواصلي معنا</h4><p>واتساب: يُضاف رقم المتجر قبل الإطلاق<br>مواعيد وخدمة العملاء: تُضاف لاحقًا</p></div></div><div class="copyright">© 2026 ELEGANT. جميع الحقوق محفوظة. نسخة تجريبية قبل الإطلاق.</div></footer>
-<div class="overlay" id="cartOverlay" onclick="outsideClose(event,'cartOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('cartOverlay')">×</button><span class="eyebrow" style="color:#9b7c48">YOUR SELECTION</span><h2>حقيبة التسوق</h2><div id="cartLines"></div><div class="total"><span>الإجمالي التقديري</span><span id="cartTotal">0 ج.م</span></div><button class="fullbtn" onclick="openCheckout()">متابعة لإرسال الطلب</button><p class="mutednote">الأسعار تجريبية وغير ملزمة. لن يتم إرسال أي شيء تلقائيًا.</p></div></div>
-<div class="overlay" id="checkoutOverlay" onclick="outsideClose(event,'checkoutOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('checkoutOverlay')">×</button><span class="eyebrow" style="color:#9b7c48">ORDER DETAILS</span><h2>بيانات الطلب</h2><form id="checkoutForm" onsubmit="submitOrder(event)"><label class="field">الاسم بالكامل<input name="name" required autocomplete="name" placeholder="اسمك"></label><label class="field">رقم الموبايل<input name="phone" required type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label class="field">المحافظة والمنطقة<input name="area" required placeholder="مثال: الإسكندرية - سموحة"></label><label class="field">العنوان بالتفصيل<textarea name="address" required placeholder="الشارع ورقم العقار وأي تفاصيل تساعد في التوصيل"></textarea></label><label class="field">ملاحظات إضافية<textarea name="notes" placeholder="المقاس أو اللون أو أي استفسار (اختياري)"></textarea></label><button class="fullbtn" type="submit">متابعة إلى واتساب</button></form><p class="mutednote">ستفتح رسالة مراجعة في واتساب. راجعي البيانات بنفسك قبل الضغط على إرسال.</p></div></div>
-<div class="overlay" id="quizOverlay" onclick="outsideClose(event,'quizOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('quizOverlay')">×</button><div id="quizContent"></div></div></div><div class="toast" id="toast"></div>
-
-<div id="elegantLightbox" role="dialog" aria-modal="true" aria-label="عارض الصور" onclick="if(event.target===this)closeElegantLightbox()">
- <div class="lightbox-inner">
-  <button class="lightbox-close" type="button" aria-label="إغلاق" onclick="closeElegantLightbox()">×</button>
-  <button class="lightbox-prev" type="button" aria-label="الصورة السابقة" onclick="stepElegantLightbox(-1)">›</button>
-  <img id="elegantLightboxImage" alt="">
-  <div class="lightbox-caption" id="elegantLightboxCaption" aria-live="polite"></div>
-  <button class="lightbox-next" type="button" aria-label="الصورة التالية" onclick="stepElegantLightbox(1)">‹</button>
- </div>
-</div>
-
-<script>
-const WHATSAPP_NUMBER='201000000000'; // استبدله برقم واتساب العمل بصيغة دولية بدون +
-const products=[
-{id:1,name:'قلادة الأميثيست',stone:'AMETHYST',category:'necklace',price:1850,tag:'اختيار مميز',desc:'تفاصيل بنفسجية ناعمة بتصميم أنثوي.',img:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=850&q=85'},
-{id:2,name:'خاتم الياقوت',stone:'RUBY',category:'ring',price:2400,tag:'جديد',desc:'لمسة حمراء جريئة تلفت النظر.',img:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=850&q=85'},
-{id:3,name:'سوار الزمرد',stone:'EMERALD',category:'bracelet',price:2100,tag:'مختار بعناية',desc:'درجات خضراء مستوحاة من الطبيعة.',img:'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=850&q=85'},
-{id:4,name:'قلادة ذهبية ناعمة',stone:'GOLD TONE',category:'necklace',price:1650,tag:'الأكثر أناقة',desc:'بساطة كلاسيكية تكمل إطلالتك.',img:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=850&q=85'},
-{id:5,name:'خاتم حجر القمر',stone:'MOONSTONE',category:'ring',price:1950,tag:'قطعة هادئة',desc:'بريق هادئ ولمسة مختلفة.',img:'https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=850&q=85'},
-{id:6,name:'سوار بتفاصيل لامعة',stone:'SIGNATURE',category:'bracelet',price:1750,tag:'هدية جميلة',desc:'قطعة يومية بتفاصيل رقيقة.',img:'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=850&q=85'}
-];
-let cart=JSON.parse(localStorage.getItem('elegant-cart')||'[]'),activeFilter='all',quizIndex=0,quizAnswers=[];\nlet favoriteIds=JSON.parse(localStorage.getItem('elegant-favorites')||'[]'),showFavorites=false;\nfunction saveFavorites(){localStorage.setItem('elegant-favorites',JSON.stringify(favoriteIds));document.getElementById('favoritesCount').textContent=favoriteIds.length}\nfunction toggleFavorite(id){favoriteIds=favoriteIds.includes(id)?favoriteIds.filter(x=>x!==id):[...favoriteIds,id];saveFavorites();renderProducts();toast(favoriteIds.includes(id)?'تم حفظ القطعة في المفضلة':'تمت إزالة القطعة من المفضلة')}\nfunction toggleFavoritesView(){showFavorites=!showFavorites;const b=document.getElementById('favoritesToggle');b.classList.toggle('active',showFavorites);b.setAttribute('aria-pressed',String(showFavorites));b.innerHTML=(showFavorites?'♥ المفضلة':'♡ المفضلة')+' <span class="cartcount" id="favoritesCount">'+favoriteIds.length+'</span>';document.getElementById('shop').scrollIntoView({behavior:'smooth'});renderProducts()}
-const money=n=>new Intl.NumberFormat('ar-EG').format(n)+' ج.م';
-function renderProducts(){const term=(document.getElementById('search').value||'').trim().toLowerCase();const list=products.filter(p=>(activeFilter==='all'||p.category===activeFilter)&&(!term||(p.name+' '+p.stone+' '+p.desc).toLowerCase().includes(term))&&(!showFavorites||favoriteIds.includes(p.id)));document.getElementById('products').innerHTML=list.length?list.map(p=>'<article class="card"><div class="cardimg"><img loading="lazy" src="'+p.img+'" alt="'+p.name+'"><span class="badge">'+p.tag+'</span><button class="favorite-btn '+(favoriteIds.includes(p.id)?'is-favorite':'')+'" type="button" onclick="toggleFavorite('+p.id+')" aria-label="'+(favoriteIds.includes(p.id)?'إزالة من المفضلة':'أضيفي للمفضلة')+'" aria-pressed="'+favoriteIds.includes(p.id)+'">'+(favoriteIds.includes(p.id)?'♥':'♡')+'</button></div><div class="cardbody"><span class="cardmeta">'+p.stone+'</span><h3>'+p.name+'</h3><p class="carddesc">'+p.desc+'</p><div class="cardfoot"><span class="price">'+money(p.price)+'</span><button class="add" onclick="addToCart('+p.id+')">أضيفي للحقيبة +</button></div></div></article>').join(''):'<div class="empty">'+(showFavorites?'لم تحفظي أي قطعة في المفضلة بعد. اضغطي ♡ على القطعة التي تعجبك.':'لا توجد نتائج مطابقة. جرّبي كلمة أخرى.')+'</div>'}
-document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeFilter=b.dataset.filter;renderProducts()}));
-function saveCart(){localStorage.setItem('elegant-cart',JSON.stringify(cart));document.getElementById('cartCount').textContent=cart.reduce((s,x)=>s+x.qty,0)}
-function addToCart(id){const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});saveCart();toast('تمت إضافة القطعة إلى حقيبتك')}
-function openCart(){renderCart();document.getElementById('cartOverlay').classList.add('open')}
-function renderCart(){const box=document.getElementById('cartLines');if(!cart.length){box.innerHTML='<p class="mutednote">حقيبتك فارغة حاليًا. اكتشفي المجموعة وأضيفي ما يعجبك.</p>';document.getElementById('cartTotal').textContent=money(0);return}box.innerHTML=cart.map(x=>{const p=products.find(y=>y.id===x.id);return '<div class="cartline"><div><b>'+p.name+'</b><br><small>'+money(p.price)+'</small></div><div class="qty"><button onclick="changeQty('+p.id+',-1)">−</button>'+x.qty+'<button onclick="changeQty('+p.id+',1)">+</button></div><button class="remove" onclick="removeItem('+p.id+')">حذف</button></div>'}).join('');document.getElementById('cartTotal').textContent=money(cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0))}
-function changeQty(id,d){const x=cart.find(i=>i.id===id);if(x)x.qty+=d;cart=cart.filter(i=>i.qty>0);saveCart();renderCart()}
-function removeItem(id){cart=cart.filter(i=>i.id!==id);saveCart();renderCart()}
-function openCheckout(){if(!cart.length){toast('أضيفي قطعة للحقيبة أولًا');return}closeOverlay('cartOverlay');document.getElementById('checkoutOverlay').classList.add('open')}
-function submitOrder(e){e.preventDefault();const f=new FormData(e.target);const lines=cart.map(x=>{const p=products.find(y=>y.id===x.id);return '• '+p.name+' × '+x.qty+' — '+money(p.price*x.qty)}).join('\n');const total=cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0);const msg='مرحبًا Elegant، أرغب في الاستفسار وتأكيد تفاصيل الطلب التالي:\n\n'+lines+'\n\nالإجمالي التقديري: '+money(total)+'\n\nالاسم: '+f.get('name')+'\nالهاتف: '+f.get('phone')+'\nالمنطقة: '+f.get('area')+'\nالعنوان: '+f.get('address')+'\nملاحظات: '+(f.get('notes')||'لا يوجد')+'\n\nأرجو تأكيد التوفر والسعر النهائي وتكلفة الشحن.';if(WHATSAPP_NUMBER==='201000000000'){toast('تنبيه: غيّر رقم واتساب التجريبي داخل الملف قبل الإطلاق');}window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank');}
-function closeOverlay(id){document.getElementById(id).classList.remove('open')}
-function outsideClose(e,id){if(e.target.id===id)closeOverlay(id)}
-function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2400)}
-function newsletter(e){e.preventDefault();const email=document.getElementById('newsEmail').value;const msg='مرحبًا Elegant، أرغب في معرفة أخبار الإطلاق. بريدي: '+email;window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank');toast('فتحنا رسالة جاهزة للتواصل')}
-const quiz=[{q:'ما الطاقة الأقرب إلى روحك؟',a:['الهدوء والسكينة','الثقة والحضور','الشغف والحيوية']},{q:'أي عالم يجذبك أكثر؟',a:['ليل هادئ وسماء صافية','أناقة كلاسيكية خالدة','طبيعة نابضة بالألوان']},{q:'كيف تحبين أن يتذكرك الناس؟',a:['رقيقة ومميزة','قوية ولافتة','حرة وأصيلة']}];
-function startQuiz(){quizIndex=0;quizAnswers=[];renderQuiz();document.getElementById('quizOverlay').classList.add('open')}
-function renderQuiz(){const q=quiz[quizIndex];document.getElementById('quizContent').innerHTML='<div class="quizstep"><span class="eyebrow" style="color:#9b7c48">YOUR SIGNATURE STONE · 0'+(quizIndex+1)+'/03</span><h2>اكتشفي جوهرك</h2><h3>'+q.q+'</h3><div class="quizchoices">'+q.a.map((a,i)=>'<button class="quizchoice '+(quizAnswers[quizIndex]===i?'selected':'')+'" onclick="chooseQuiz('+i+')">'+a+'</button>').join('')+'</div><button class="fullbtn" '+(quizAnswers[quizIndex]===undefined?'disabled style="opacity:.4"':'')+' onclick="nextQuiz()">'+(quizIndex===2?'اكشفي عن حجرك':'التالي')+'</button>'+(quizIndex?' <button class="remove" onclick="quizIndex--;renderQuiz()">رجوع</button>':'')+'</div>'}
-function chooseQuiz(i){quizAnswers[quizIndex]=i;renderQuiz()}
-function nextQuiz(){if(quizAnswers[quizIndex]===undefined)return;if(quizIndex<2){quizIndex++;renderQuiz();return}const score=quizAnswers.reduce((a,b)=>a+b,0);const stone=score<=2?{n:'الأميثيست · Amethyst',e:'💜',d:'يرتبط هذا الحجر في تقاليد ورموز الأحجار بالصفاء والتأمل. اختيارك يميل إلى الهدوء والعمق والجمال الذي لا يحتاج إلى ضجيج.',p:1}:score<=4?{n:'الياقوت · Ruby',e:'❤️',d:'ارتبط الياقوت بالشغف والقوة والحضور. اختياراتك تعكس شخصية تحب التعبير عن نفسها بثقة وجرأة.',p:2}:{n:'الزمرد · Emerald',e:'💚',d:'يرتبط الزمرد بالتجدد والطبيعة والتوازن. اختياراتك تميل إلى الأصالة والحرية والجمال بروحه الخاصة.',p:3};const p=products[stone.p-1];document.getElementById('quizContent').innerHTML='<div class="quizstep"><span class="eyebrow" style="color:#9b7c48">YOUR ELEGANT MATCH</span><div class="revealgem">'+stone.e+'</div><h2>'+stone.n+'</h2><p style="font-size:12px;line-height:2;color:#746b5e">'+stone.d+'</p><p style="font-size:11px">ترشيحنا لك: <b>'+p.name+'</b></p><button class="fullbtn" onclick="addToCart('+p.id+');closeOverlay(\'quizOverlay\');document.getElementById(\'shop\').scrollIntoView({behavior:\'smooth\'})">أضيفي الترشيح إلى حقيبتك</button><button class="remove" onclick="startQuiz()">إعادة التجربة</button></div>'}
-renderProducts();saveCart();saveFavorites();
-
-/* Tap-to-explore image viewer + smooth section reveals */
-let elegantLightboxItems=[],elegantLightboxIndex=0,elegantPreviousFocus=null;
-function collectElegantImages(){
- const items=[];
- document.querySelectorAll('.cardimg img,.rough-tile img').forEach(el=>{
-  if(el.src)items.push({src:el.currentSrc||el.src,alt:el.alt||'Elegant collection'});
- });
- return items;
-}
-function openElegantLightbox(src,caption){
- elegantLightboxItems=collectElegantImages();
- let index=elegantLightboxItems.findIndex(x=>x.src===src);
- if(index<0){elegantLightboxItems.unshift({src,alt:caption||'Elegant'});index=0}
- elegantLightboxIndex=index;elegantPreviousFocus=document.activeElement;
- showElegantLightbox();
-}
-function showElegantLightbox(){
- const item=elegantLightboxItems[elegantLightboxIndex];if(!item)return;
- const img=document.getElementById('elegantLightboxImage');
- img.src=item.src;img.alt=item.alt;
- document.getElementById('elegantLightboxCaption').textContent=(item.alt||'Elegant')+'  ·  '+(elegantLightboxIndex+1)+' / '+elegantLightboxItems.length;
- document.getElementById('elegantLightbox').classList.add('open');
- document.body.style.overflow='hidden';
- document.querySelector('.lightbox-close').focus();
-}
-function stepElegantLightbox(direction){
- if(!elegantLightboxItems.length)return;
- elegantLightboxIndex=(elegantLightboxIndex+direction+elegantLightboxItems.length)%elegantLightboxItems.length;
- showElegantLightbox();
-}
-function closeElegantLightbox(){
- document.getElementById('elegantLightbox').classList.remove('open');
- document.body.style.overflow='';
- if(elegantPreviousFocus&&elegantPreviousFocus.focus)elegantPreviousFocus.focus();
-}
-document.addEventListener('click',e=>{
- const image=e.target.closest('.cardimg img,.rough-tile img');
- if(image){e.preventDefault();openElegantLightbox(image.currentSrc||image.src,image.alt);return}
- const hero=e.target.closest('.hero-art');
- if(hero){openElegantLightbox('./Jewelry_product_photography_inst%E2%80%A6_c1674278_2K.jpg','ELEGANT · الواجهة الرئيسية');return}
- const story=e.target.closest('.storyimg');
- if(story){openElegantLightbox('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=90','ELEGANT · حكاية التفاصيل')}
-});
-document.addEventListener('keydown',e=>{
- if(!document.getElementById('elegantLightbox').classList.contains('open'))return;
- if(e.key==='Escape')closeElegantLightbox();
- if(e.key==='ArrowRight')stepElegantLightbox(-1);
- if(e.key==='ArrowLeft')stepElegantLightbox(1);
-});
-function initElegantReveals(){
- const targets=document.querySelectorAll('.trust,.sectionhead,.card,.discovery-copy,.discovery-box,.rough-tile,.storycopy,.storyimg,.benefit,.faq,.newsletter');
- targets.forEach(el=>el.classList.add('reveal-ready'));
- if(!('IntersectionObserver'in window)){targets.forEach(el=>el.classList.add('is-visible'));return}
- const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}});
- },{threshold:.12,rootMargin:'0px 0px -35px 0px'});
- targets.forEach(el=>observer.observe(el));
-}
-document.querySelectorAll('.hero-art,.storyimg').forEach(el=>{el.setAttribute('role','button');el.setAttribute('tabindex','0');el.setAttribute('aria-label','اضغط لعرض الصورة بحجم أكبر')});
-document.addEventListener('keydown',e=>{
- if((e.key==='Enter'||e.key===' ')&&e.target.matches('.hero-art,.storyimg')){e.preventDefault();e.target.click()}
-});
-initElegantReveals();
-
-</script>
-</body></html>
 <style>
 /* Saved pieces — local to this visitor's browser */
 .cardimg{position:relative}
@@ -838,3 +699,151 @@ initElegantReveals();
  .benefits{grid-template-columns:1fr}
 }
 </style>
+</head>
+<body>
+<div class="announcement">اختيارات استثنائية • تفاصيل تصنع الفرق • ELEGANT</div>
+<header class="nav"><a class="brand" href="#">ELEGANT</a><nav class="navlinks"><a href="#shop">تسوقي المجموعة</a><a href="#discovery">اكتشف جوهرك</a><a href="#gem-guide">دليل الأحجار</a><a href="#story">حكايتنا</a><a href="#faq">الأسئلة الشائعة</a></nav><div class="navtools"><button class="iconbtn" id="favoritesToggle" onclick="toggleFavoritesView()" aria-pressed="false">♡ المفضلة <span class="cartcount" id="favoritesCount">0</span></button><button class="iconbtn" onclick="openCart()">حقيبتي <span class="cartcount" id="cartCount">0</span></button></div></header>
+<section class="hero"><div class="hero-copy"><span class="eyebrow">YOUR STYLE. YOUR SIGNATURE.</span><h1>تألّقي<br><span>على طريقتكِ.</span></h1><p>تفاصيل تلفت النظر، ولمسات مستوحاة من سحر الأحجار… اختاري قطعة تضيف إلى إطلالتك حضورًا يليق بذوقك وتحكي شيئًا منك.</p><a class="goldbtn" href="#shop">اكتشفي المجموعة　↙</a></div><div class="hero-art" aria-label="صورة مجوهرات أنيقة"></div></section>
+<div class="trust"><div><strong>✧ اختيارات منتقاة</strong><small>تفاصيل نختارها بعناية</small></div><div><strong>◇ تجربة تسوق بسيطة</strong><small>من الاكتشاف حتى الطلب</small></div><div><strong>♡ لمستك الخاصة</strong><small>قطعة تعبّر عن أسلوبك</small></div></div>
+<section class="section" id="shop"><div class="sectionhead"><span class="eyebrow">THE COLLECTION</span><h2>قطع تختارها ذائقتك</h2><p>اكتشفي تشكيلتنا من القلادات والخواتم والأساور، واختاري التفاصيل الأقرب إلى أسلوبك. المنتجات والأسعار المعروضة حاليًا تجريبية، وسيتم تحديثها قبل استقبال الطلبات الفعلية.</p></div><div class="catalog-tools"><div class="filters"><button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="necklace">قلادات</button><button class="filter" data-filter="ring">خواتم</button><button class="filter" data-filter="bracelet">أساور</button></div><input class="search" id="search" placeholder="ابحثي عن قطعة أو حجر..." oninput="renderProducts()"></div><div class="grid" id="products"></div></section>
+<section class="discovery" id="discovery"><div class="discovery-copy"><span class="eyebrow">YOUR SIGNATURE STONE</span><h2>هناك حجر…<br>يشبهك أنتِ.</h2><p>أجيبي عن ثلاثة أسئلة خفيفة لنقترح عليكِ حجرًا يتماشى مع ذوقك. تجربة ترفيهية للإلهام واكتشاف اختيارات جديدة.</p></div><div class="discovery-box"><div class="spark">✧</div><h3>اكتشف جوهرك</h3><p>ذوقك له بصمته الخاصة. ابدئي التجربة واكتشفي ترشيح Elegant الأقرب إلى اختياراتك.</p><button class="lightbtn" onclick="startQuiz()">ابدئي التجربة</button></div></section>
+
+<section class="rough-gallery" id="stones">
+ <div class="sectionhead"><span class="eyebrow">NATURE, UNFILTERED</span><h2>سحر التفاصيل… من الطبيعة</h2><p>لكل حجر تكوين يميّزه، ولكل لون سحره الخاص. شاهدي إلهامنا من تفاصيل البلورات والأحجار الخام، حيث تبدأ حكاية الجمال.</p></div>
+ <div class="rough-grid">
+  <figure class="rough-tile"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Raw_amethyst_crystals_1.jpg?width=1400" alt="تجمع بلورات أميثيست خام بنفسجية"><figcaption class="rough-caption">AMETHYST GEODE<small>VIOLET CRYSTAL FORMATION</small></figcaption></figure>
+  <figure class="rough-tile"><img loading="lazy" src="https://www.nmns.edu.tw/export/sites/nmns/ch/research/specimen/featured/.galleries/collections/exb14/Emerald.jpg" alt="بلورة زمرد خام داخل الصخر"><figcaption class="rough-caption">RAW EMERALD<small>GREEN BERYL IN MATRIX</small></figcaption></figure>
+  <figure class="rough-tile"><img loading="lazy" src="https://www.folkmarketgems.com/cdn/shop/files/chitral-emerald-specimen-sale.webp?v=1771188465&width=1600" alt="عينة زمرد خام بتكوين بلوري طبيعي"><figcaption class="rough-caption">NATURAL TEXTURE<small>UNCUT GEMSTONE</small></figcaption></figure>
+  <figure class="rough-tile"><img loading="lazy" src="https://img-edg.joomcdn.net/1cd0b335024c3fb1d202b896830345f60fe67d7b_original.jpeg" alt="بلورات أميثيست بنفسجية بتفاصيل شفافة"><figcaption class="rough-caption">CRYSTAL DETAILS<small>LIGHT · DEPTH · COLOR</small></figcaption></figure>
+  <figure class="rough-tile"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/2508/2556/articles/Amethyst.jpg?v=1675700237" alt="مجموعة أحجار أميثيست خام متداخلة"><figcaption class="rough-caption">THE RAW BEAUTY<small>INSPIRED BY NATURE</small></figcaption></figure>
+ </div>
+ <p class="rough-note">صور استلهامية لعينات أحجار خام؛ لا تمثل بالضرورة الأحجار أو القطع المتاحة للبيع في المجموعة الحالية.</p>
+</section>
+
+<section class="section gem-guide" id="gem-guide"><div class="sectionhead"><span class="eyebrow">THE GEMSTONE MEANINGS</span><h2>لكل حجر حكاية… ولكل لون معنى</h2><p>تعرّفي على الرموز والمعاني المتداولة للأحجار الكريمة، واكتشفي الحجر الأقرب إلى ذوقك وبرجك.</p></div><div class="gem-guide-grid">
+<article class="gem-guide-card gem-amethyst"><div class="gem-guide-icon">✧</div><span class="gem-en">AMETHYST</span><h3>الأميثيست · الجمشت</h3><p>يرمز في الموروث إلى الصفاء والهدوء والتأمل، بلونه البنفسجي الآسر.</p><div class="gem-meta"><b>الأبراج المرتبطة به</b><span>الدلو · الحوت · القوس</span></div><div class="gem-meta"><b>طاقته الرمزية</b><span>سكينة • وضوح • عمق</span></div></article>
+<article class="gem-guide-card gem-ruby"><div class="gem-guide-icon">♥</div><span class="gem-en">RUBY</span><h3>الياقوت الأحمر</h3><p>حجر ارتبط عبر الثقافات بالشغف والشجاعة والحضور الواثق.</p><div class="gem-meta"><b>الأبراج المرتبطة به</b><span>الحمل · الأسد</span></div><div class="gem-meta"><b>طاقته الرمزية</b><span>حيوية • جرأة • شغف</span></div></article>
+<article class="gem-guide-card gem-emerald"><div class="gem-guide-icon">❖</div><span class="gem-en">EMERALD</span><h3>الزمرد</h3><p>بلونه الأخضر العميق، يرمز إلى التجدد والوفرة والانسجام.</p><div class="gem-meta"><b>الأبراج المرتبطة به</b><span>الثور · الجوزاء</span></div><div class="gem-meta"><b>طاقته الرمزية</b><span>توازن • نمو • تجدد</span></div></article>
+<article class="gem-guide-card gem-moonstone"><div class="gem-guide-icon">☾</div><span class="gem-en">MOONSTONE</span><h3>حجر القمر</h3><p>يرتبط بالقمر والحدس والبدايات الهادئة، مع بريق ناعم متغير.</p><div class="gem-meta"><b>الأبراج المرتبطة به</b><span>السرطان</span></div><div class="gem-meta"><b>طاقته الرمزية</b><span>حدس • رقة • تجدد</span></div></article>
+<article class="gem-guide-card gem-sapphire"><div class="gem-guide-icon">◇</div><span class="gem-en">SAPPHIRE</span><h3>الياقوت الأزرق</h3><p>يرمز إلى الحكمة والتركيز والوفاء، ويجذب محبي الأناقة الهادئة.</p><div class="gem-meta"><b>الأبراج المرتبطة به</b><span>العذراء · الميزان</span></div><div class="gem-meta"><b>طاقته الرمزية</b><span>حكمة • تركيز • اتزان</span></div></article>
+<article class="gem-guide-card gem-garnet"><div class="gem-guide-icon">✦</div><span class="gem-en">GARNET</span><h3>العقيق الأحمر · جارنت</h3><p>يرتبط بالثبات والعزيمة والدفء، بلونه العميق الجريء.</p><div class="gem-meta"><b>الأبراج المرتبطة به</b><span>العقرب · الجدي</span></div><div class="gem-meta"><b>طاقته الرمزية</b><span>ثبات • عزيمة • دفء</span></div></article>
+</div><p class="gem-guide-note">ملاحظة: ارتباط الأحجار بالأبراج ومعاني الطاقة هنا مستوحى من رموز وموروثات ثقافية وفلكية شائعة، ويختلف من تقليد لآخر. هذه المعاني للتسلية والإلهام وليست حقائق علمية أو وعودًا علاجية.</p></section>
+
+<section class="section story" id="story"><div class="storyimg"></div><div class="storycopy"><span class="eyebrow" style="color:#9b7c48">A NOTE ABOUT ELEGANCE</span><h2>أناقة تبدأ من تفصيلة</h2><p>في Elegant نؤمن أن الأناقة الحقيقية تسكن التفاصيل؛ في لمعة تلفت الانتباه، وتصميم ينسجم مع أسلوبك، وقطعة تختارينها لأنها تشبهك. نمنحك مساحة لاكتشاف مجوهرات تضيف لمسة راقية لكل لحظة.</p><p>اختاري ما يعبّر عنك، وتعرّفي على تفاصيل الخامة والحجر والمقاس قبل تأكيد طلبك. لأن اختيارك يستحق أن يكون واضحًا ومميزًا.</p><a class="goldbtn" href="#shop">تصفحي المجموعة</a></div></section>
+<section class="benefits"><div class="benefit"><div class="symbol">✧</div><h3>تفاصيل على ذوقك</h3><p>تشكيلة متنوعة تساعدك على العثور على لمستك الخاصة.</p></div><div class="benefit"><div class="symbol">◇</div><h3>كل التفاصيل تهم</h3><p>نوضح لكِ تفاصيل القطعة والخامة والمقاس قبل تأكيد الطلب.</p></div><div class="benefit"><div class="symbol">♡</div><h3>نحن على تواصل</h3><p>تواصلي معنا عبر واتساب للاستفسار ومراجعة طلبك.</p></div></section>
+<section class="section" id="faq"><div class="sectionhead"><span class="eyebrow">GOOD TO KNOW</span><h2>أسئلة شائعة</h2><p>إجابات سريعة لتكون تجربتك أوضح وأسهل.</p></div><div class="faq"><details><summary>هل الأسعار والمنتجات المعروضة نهائية؟</summary><p>لا، هذه نسخة عرض أولية. يجب استبدال أسماء المنتجات والصور والأسعار بمخزون Elegant الفعلي قبل استقبال طلبات حقيقية.</p></details><details><summary>هل الأحجار المعروضة طبيعية ومعتمدة؟</summary><p>الموقع لا يقدم أي ادعاء عن طبيعة أو مصدر أو اعتماد الأحجار التجريبية. يرجى طلب بيانات الحجر وشهادة الفحص إن توفرت من فريق المتجر قبل الشراء.</p></details><details><summary>كيف أرسل طلبي؟</summary><p>أضيفي القطع إلى الحقيبة، ثم أدخلي بيانات التواصل والعنوان. سيفتح واتساب برسالة جاهزة لتراجعيها وترسليها بنفسك.</p></details><details><summary>هل يمكنني تعديل أو إلغاء الطلب؟</summary><p>التعديل أو الإلغاء يتم بالتواصل المباشر مع المتجر عبر واتساب في هذه النسخة. لا يوجد حتى الآن نظام طلبات أو لوحة إدارة متصلة بقاعدة بيانات.</p></details></div></section>
+<section class="newsletter"><span class="eyebrow" style="color:#987847">A LITTLE NOTE FROM ELEGANT</span><h2>خليكي قريبة من جديدنا</h2><p>اتركي بريدك لبدء رسالة واتساب مع فريق Elegant، وكوني من أوائل من يعرفون جديد المجموعة.</p><form onsubmit="newsletter(event)"><input id="newsEmail" type="email" required placeholder="بريدك الإلكتروني"><button>تواصل</button></form></section>
+<footer class="footer"><div class="footergrid"><div><span class="brand">ELEGANT</span><p>مجوهرات بتفاصيل راقية، واختيارات تعبّر عن ذوقك. اكتشفي بصمتك الخاصة مع Elegant.</p></div><div><h4>روابط سريعة</h4><p><a href="#shop">المجموعة</a><br><a href="#discovery">اكتشف جوهرك</a><br><a href="#story">حكايتنا</a></p></div><div><h4>تواصلي معنا</h4><p>واتساب: يُضاف رقم المتجر قبل الإطلاق<br>مواعيد وخدمة العملاء: تُضاف لاحقًا</p></div></div><div class="copyright">© 2026 ELEGANT. جميع الحقوق محفوظة. نسخة تجريبية قبل الإطلاق.</div></footer>
+<div class="overlay" id="cartOverlay" onclick="outsideClose(event,'cartOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('cartOverlay')">×</button><span class="eyebrow" style="color:#9b7c48">YOUR SELECTION</span><h2>حقيبة التسوق</h2><div id="cartLines"></div><div class="total"><span>الإجمالي التقديري</span><span id="cartTotal">0 ج.م</span></div><button class="fullbtn" onclick="openCheckout()">متابعة لإرسال الطلب</button><p class="mutednote">الأسعار تجريبية وغير ملزمة. لن يتم إرسال أي شيء تلقائيًا.</p></div></div>
+<div class="overlay" id="checkoutOverlay" onclick="outsideClose(event,'checkoutOverlay')"><div class="panel"><button class="close" onclick="closeOverlay('checkoutOverlay')">×</button><span class="eyebrow" style="color:#9b7c48">ORDER DETAILS</span><h2>بيانات الطلب</h2><form id="checkoutForm" onsubmit="submitOrder(event)"><label class="field">الاسم بالكامل<input name="name" required autocomplete="name" placeholder="اسمك"></label><label class="field">رقم الموبايل<input name="phone" required type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label class="field">المحافظة والمنطقة<input name="area" required placeholder="مثال: الإسكندرية - سموحة"></label><label class="field">العنوان بالتفصيل<textarea name="address" required placeholder="الشارع ورقم العقار وأي تفاصيل تساعد في التوصيل"></textarea></label><label class="field">ملاحظات إضافية<textarea name="notes" placeholder="المقاس أو اللون أو أي استفسار (اختياري)"></textarea></label><button class="fullbtn" type="submit">متابعة إلى واتساب</button></form><p class="mutednote">ستفتح رسالة مراجعة في واتساب. راجعي البيانات بنفسك قبل الضغط على إرسال.</p></div></div>
+<div class="overlay quiz-overlay" id="quizOverlay" role="dialog" aria-modal="true" aria-labelledby="quizDialogTitle" onclick="outsideClose(event,'quizOverlay')"><div class="panel quiz-panel"><button class="close" type="button" aria-label="إغلاق التجربة" onclick="closeQuiz()">×</button><div class="quiz-brandline"><span>ELEGANT</span><i>YOUR PERSONAL GEMSTONE GUIDE</i></div><div id="quizContent"></div></div></div><div class="toast" id="toast"></div>
+
+<div id="elegantLightbox" role="dialog" aria-modal="true" aria-label="عارض الصور" onclick="if(event.target===this)closeElegantLightbox()">
+ <div class="lightbox-inner">
+  <button class="lightbox-close" type="button" aria-label="إغلاق" onclick="closeElegantLightbox()">×</button>
+  <button class="lightbox-prev" type="button" aria-label="الصورة السابقة" onclick="stepElegantLightbox(-1)">›</button>
+  <img id="elegantLightboxImage" alt="">
+  <div class="lightbox-caption" id="elegantLightboxCaption" aria-live="polite"></div>
+  <button class="lightbox-next" type="button" aria-label="الصورة التالية" onclick="stepElegantLightbox(1)">‹</button>
+ </div>
+</div>
+
+<script>
+const WHATSAPP_NUMBER='201000000000'; // استبدله برقم واتساب العمل بصيغة دولية بدون +
+const products=[
+{id:1,name:'قلادة الأميثيست',stone:'AMETHYST',category:'necklace',price:1850,tag:'اختيار مميز',desc:'تفاصيل بنفسجية ناعمة بتصميم أنثوي.',img:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=850&q=85'},
+{id:2,name:'خاتم الياقوت',stone:'RUBY',category:'ring',price:2400,tag:'جديد',desc:'لمسة حمراء جريئة تلفت النظر.',img:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=850&q=85'},
+{id:3,name:'سوار الزمرد',stone:'EMERALD',category:'bracelet',price:2100,tag:'مختار بعناية',desc:'درجات خضراء مستوحاة من الطبيعة.',img:'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=850&q=85'},
+{id:4,name:'قلادة ذهبية ناعمة',stone:'GOLD TONE',category:'necklace',price:1650,tag:'الأكثر أناقة',desc:'بساطة كلاسيكية تكمل إطلالتك.',img:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=850&q=85'},
+{id:5,name:'خاتم حجر القمر',stone:'MOONSTONE',category:'ring',price:1950,tag:'قطعة هادئة',desc:'بريق هادئ ولمسة مختلفة.',img:'https://images.unsplash.com/photo-1603561596112-0a132b757442?auto=format&fit=crop&w=850&q=85'},
+{id:6,name:'سوار بتفاصيل لامعة',stone:'SIGNATURE',category:'bracelet',price:1750,tag:'هدية جميلة',desc:'قطعة يومية بتفاصيل رقيقة.',img:'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=850&q=85'}
+];
+let cart=JSON.parse(localStorage.getItem('elegant-cart')||'[]'),activeFilter='all',quizIndex=0,quizAnswers=[];\nlet favoriteIds=JSON.parse(localStorage.getItem('elegant-favorites')||'[]'),showFavorites=false;\nfunction saveFavorites(){localStorage.setItem('elegant-favorites',JSON.stringify(favoriteIds));document.getElementById('favoritesCount').textContent=favoriteIds.length}\nfunction toggleFavorite(id){favoriteIds=favoriteIds.includes(id)?favoriteIds.filter(x=>x!==id):[...favoriteIds,id];saveFavorites();renderProducts();toast(favoriteIds.includes(id)?'تم حفظ القطعة في المفضلة':'تمت إزالة القطعة من المفضلة')}\nfunction toggleFavoritesView(){showFavorites=!showFavorites;const b=document.getElementById('favoritesToggle');b.classList.toggle('active',showFavorites);b.setAttribute('aria-pressed',String(showFavorites));b.innerHTML=(showFavorites?'♥ المفضلة':'♡ المفضلة')+' <span class="cartcount" id="favoritesCount">'+favoriteIds.length+'</span>';document.getElementById('shop').scrollIntoView({behavior:'smooth'});renderProducts()}
+const money=n=>new Intl.NumberFormat('ar-EG').format(n)+' ج.م';
+function renderProducts(){const term=(document.getElementById('search').value||'').trim().toLowerCase();const list=products.filter(p=>(activeFilter==='all'||p.category===activeFilter)&&(!term||(p.name+' '+p.stone+' '+p.desc).toLowerCase().includes(term))&&(!showFavorites||favoriteIds.includes(p.id)));document.getElementById('products').innerHTML=list.length?list.map(p=>'<article class="card"><div class="cardimg"><img loading="lazy" src="'+p.img+'" alt="'+p.name+'"><span class="badge">'+p.tag+'</span><button class="favorite-btn '+(favoriteIds.includes(p.id)?'is-favorite':'')+'" type="button" onclick="toggleFavorite('+p.id+')" aria-label="'+(favoriteIds.includes(p.id)?'إزالة من المفضلة':'أضيفي للمفضلة')+'" aria-pressed="'+favoriteIds.includes(p.id)+'">'+(favoriteIds.includes(p.id)?'♥':'♡')+'</button></div><div class="cardbody"><span class="cardmeta">'+p.stone+'</span><h3>'+p.name+'</h3><p class="carddesc">'+p.desc+'</p><div class="cardfoot"><span class="price">'+money(p.price)+'</span><button class="add" onclick="addToCart('+p.id+')">أضيفي للحقيبة +</button></div></div></article>').join(''):'<div class="empty">'+(showFavorites?'لم تحفظي أي قطعة في المفضلة بعد. اضغطي ♡ على القطعة التي تعجبك.':'لا توجد نتائج مطابقة. جرّبي كلمة أخرى.')+'</div>'}
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeFilter=b.dataset.filter;renderProducts()}));
+function saveCart(){localStorage.setItem('elegant-cart',JSON.stringify(cart));document.getElementById('cartCount').textContent=cart.reduce((s,x)=>s+x.qty,0)}
+function addToCart(id){const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});saveCart();toast('تمت إضافة القطعة إلى حقيبتك')}
+function openCart(){renderCart();document.getElementById('cartOverlay').classList.add('open')}
+function renderCart(){const box=document.getElementById('cartLines');if(!cart.length){box.innerHTML='<p class="mutednote">حقيبتك فارغة حاليًا. اكتشفي المجموعة وأضيفي ما يعجبك.</p>';document.getElementById('cartTotal').textContent=money(0);return}box.innerHTML=cart.map(x=>{const p=products.find(y=>y.id===x.id);return '<div class="cartline"><div><b>'+p.name+'</b><br><small>'+money(p.price)+'</small></div><div class="qty"><button onclick="changeQty('+p.id+',-1)">−</button>'+x.qty+'<button onclick="changeQty('+p.id+',1)">+</button></div><button class="remove" onclick="removeItem('+p.id+')">حذف</button></div>'}).join('');document.getElementById('cartTotal').textContent=money(cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0))}
+function changeQty(id,d){const x=cart.find(i=>i.id===id);if(x)x.qty+=d;cart=cart.filter(i=>i.qty>0);saveCart();renderCart()}
+function removeItem(id){cart=cart.filter(i=>i.id!==id);saveCart();renderCart()}
+function openCheckout(){if(!cart.length){toast('أضيفي قطعة للحقيبة أولًا');return}closeOverlay('cartOverlay');document.getElementById('checkoutOverlay').classList.add('open')}
+function submitOrder(e){e.preventDefault();const f=new FormData(e.target);const lines=cart.map(x=>{const p=products.find(y=>y.id===x.id);return '• '+p.name+' × '+x.qty+' — '+money(p.price*x.qty)}).join('\n');const total=cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0);const msg='مرحبًا Elegant، أرغب في الاستفسار وتأكيد تفاصيل الطلب التالي:\n\n'+lines+'\n\nالإجمالي التقديري: '+money(total)+'\n\nالاسم: '+f.get('name')+'\nالهاتف: '+f.get('phone')+'\nالمنطقة: '+f.get('area')+'\nالعنوان: '+f.get('address')+'\nملاحظات: '+(f.get('notes')||'لا يوجد')+'\n\nأرجو تأكيد التوفر والسعر النهائي وتكلفة الشحن.';if(WHATSAPP_NUMBER==='201000000000'){toast('تنبيه: غيّر رقم واتساب التجريبي داخل الملف قبل الإطلاق');}window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank');}
+function closeOverlay(id){document.getElementById(id).classList.remove('open')}
+function outsideClose(e,id){if(e.target.id===id)closeOverlay(id)}
+function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2400)}
+function newsletter(e){e.preventDefault();const email=document.getElementById('newsEmail').value;const msg='مرحبًا Elegant، أرغب في معرفة أخبار الإطلاق. بريدي: '+email;window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank');toast('فتحنا رسالة جاهزة للتواصل')}
+const quiz=[{q:'ما الطاقة الأقرب إلى روحك؟',a:['الهدوء والسكينة','الثقة والحضور','الشغف والحيوية']},{q:'أي عالم يجذبك أكثر؟',a:['ليل هادئ وسماء صافية','أناقة كلاسيكية خالدة','طبيعة نابضة بالألوان']},{q:'كيف تحبين أن يتذكرك الناس؟',a:['رقيقة ومميزة','قوية ولافتة','حرة وأصيلة']}];
+function startQuiz(){quizIndex=0;quizAnswers=[];renderQuiz();document.getElementById('quizOverlay').classList.add('open')}
+function renderQuiz(){const q=quiz[quizIndex];document.getElementById('quizContent').innerHTML='<div class="quizstep"><span class="eyebrow" style="color:#9b7c48">YOUR SIGNATURE STONE · 0'+(quizIndex+1)+'/03</span><h2>اكتشفي جوهرك</h2><h3>'+q.q+'</h3><div class="quizchoices">'+q.a.map((a,i)=>'<button class="quizchoice '+(quizAnswers[quizIndex]===i?'selected':'')+'" onclick="chooseQuiz('+i+')">'+a+'</button>').join('')+'</div><button class="fullbtn" '+(quizAnswers[quizIndex]===undefined?'disabled style="opacity:.4"':'')+' onclick="nextQuiz()">'+(quizIndex===2?'اكشفي عن حجرك':'التالي')+'</button>'+(quizIndex?' <button class="remove" onclick="quizIndex--;renderQuiz()">رجوع</button>':'')+'</div>'}
+function chooseQuiz(i){quizAnswers[quizIndex]=i;renderQuiz()}
+function nextQuiz(){if(quizAnswers[quizIndex]===undefined)return;if(quizIndex<2){quizIndex++;renderQuiz();return}const score=quizAnswers.reduce((a,b)=>a+b,0);const stone=score<=2?{n:'الأميثيست · Amethyst',e:'💜',d:'يرتبط هذا الحجر في تقاليد ورموز الأحجار بالصفاء والتأمل. اختيارك يميل إلى الهدوء والعمق والجمال الذي لا يحتاج إلى ضجيج.',p:1}:score<=4?{n:'الياقوت · Ruby',e:'❤️',d:'ارتبط الياقوت بالشغف والقوة والحضور. اختياراتك تعكس شخصية تحب التعبير عن نفسها بثقة وجرأة.',p:2}:{n:'الزمرد · Emerald',e:'💚',d:'يرتبط الزمرد بالتجدد والطبيعة والتوازن. اختياراتك تميل إلى الأصالة والحرية والجمال بروحه الخاصة.',p:3};const p=products[stone.p-1];document.getElementById('quizContent').innerHTML='<div class="quizstep"><span class="eyebrow" style="color:#9b7c48">YOUR ELEGANT MATCH</span><div class="revealgem">'+stone.e+'</div><h2>'+stone.n+'</h2><p style="font-size:12px;line-height:2;color:#746b5e">'+stone.d+'</p><p style="font-size:11px">ترشيحنا لك: <b>'+p.name+'</b></p><button class="fullbtn" onclick="addToCart('+p.id+');closeOverlay(\'quizOverlay\');document.getElementById(\'shop\').scrollIntoView({behavior:\'smooth\'})">أضيفي الترشيح إلى حقيبتك</button><button class="remove" onclick="startQuiz()">إعادة التجربة</button></div>'}
+renderProducts();saveCart();saveFavorites();
+
+/* Tap-to-explore image viewer + smooth section reveals */
+let elegantLightboxItems=[],elegantLightboxIndex=0,elegantPreviousFocus=null;
+function collectElegantImages(){
+ const items=[];
+ document.querySelectorAll('.cardimg img,.rough-tile img').forEach(el=>{
+  if(el.src)items.push({src:el.currentSrc||el.src,alt:el.alt||'Elegant collection'});
+ });
+ return items;
+}
+function openElegantLightbox(src,caption){
+ elegantLightboxItems=collectElegantImages();
+ let index=elegantLightboxItems.findIndex(x=>x.src===src);
+ if(index<0){elegantLightboxItems.unshift({src,alt:caption||'Elegant'});index=0}
+ elegantLightboxIndex=index;elegantPreviousFocus=document.activeElement;
+ showElegantLightbox();
+}
+function showElegantLightbox(){
+ const item=elegantLightboxItems[elegantLightboxIndex];if(!item)return;
+ const img=document.getElementById('elegantLightboxImage');
+ img.src=item.src;img.alt=item.alt;
+ document.getElementById('elegantLightboxCaption').textContent=(item.alt||'Elegant')+'  ·  '+(elegantLightboxIndex+1)+' / '+elegantLightboxItems.length;
+ document.getElementById('elegantLightbox').classList.add('open');
+ document.body.style.overflow='hidden';
+ document.querySelector('.lightbox-close').focus();
+}
+function stepElegantLightbox(direction){
+ if(!elegantLightboxItems.length)return;
+ elegantLightboxIndex=(elegantLightboxIndex+direction+elegantLightboxItems.length)%elegantLightboxItems.length;
+ showElegantLightbox();
+}
+function closeElegantLightbox(){
+ document.getElementById('elegantLightbox').classList.remove('open');
+ document.body.style.overflow='';
+ if(elegantPreviousFocus&&elegantPreviousFocus.focus)elegantPreviousFocus.focus();
+}
+document.addEventListener('click',e=>{
+ const image=e.target.closest('.cardimg img,.rough-tile img');
+ if(image){e.preventDefault();openElegantLightbox(image.currentSrc||image.src,image.alt);return}
+ const hero=e.target.closest('.hero-art');
+ if(hero){openElegantLightbox('./Jewelry_product_photography_inst%E2%80%A6_c1674278_2K.jpg','ELEGANT · الواجهة الرئيسية');return}
+ const story=e.target.closest('.storyimg');
+ if(story){openElegantLightbox('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=90','ELEGANT · حكاية التفاصيل')}
+});
+document.addEventListener('keydown',e=>{
+ if(!document.getElementById('elegantLightbox').classList.contains('open'))return;
+ if(e.key==='Escape')closeElegantLightbox();
+ if(e.key==='ArrowRight')stepElegantLightbox(-1);
+ if(e.key==='ArrowLeft')stepElegantLightbox(1);
+});
+function initElegantReveals(){
+ const targets=document.querySelectorAll('.trust,.sectionhead,.card,.discovery-copy,.discovery-box,.rough-tile,.storycopy,.storyimg,.benefit,.faq,.newsletter');
+ targets.forEach(el=>el.classList.add('reveal-ready'));
+ if(!('IntersectionObserver'in window)){targets.forEach(el=>el.classList.add('is-visible'));return}
+ const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}});
+ },{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+ targets.forEach(el=>observer.observe(el));
+}
+document.querySelectorAll('.hero-art,.storyimg').forEach(el=>{el.setAttribute('role','button');el.setAttribute('tabindex','0');el.setAttribute('aria-label','اضغط لعرض الصورة بحجم أكبر')});
+document.addEventListener('keydown',e=>{
+ if((e.key==='Enter'||e.key===' ')&&e.target.matches('.hero-art,.storyimg')){e.preventDefault();e.target.click()}
+});
+initElegantReveals();
+
+</script>
+</body></html>
