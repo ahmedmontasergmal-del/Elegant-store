@@ -1,0 +1,820 @@
+{
+  "source_image_count": 136,
+  "unique_image_count": 134,
+  "exact_duplicates_removed": [
+    {
+      "file": "IMG_3509.jpeg_2db7e42f_2K.jpg",
+      "duplicate_of": "IMG_3509.jpeg_2db7e42f_2K (1).jpg"
+    },
+    {
+      "file": "IMG_3528.jpeg_f3d025fd_2K.jpg",
+      "duplicate_of": "IMG_3528.jpeg_f3d025fd_2K (1).jpg"
+    }
+  ],
+  "images": [
+    {
+      "original": "IMG_3473.jpeg_0eb1dc31_2K.jpg",
+      "webp": "IMG_3473.jpeg_0eb1dc31_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3475.jpeg_700bbf12_2K.jpg",
+      "webp": "IMG_3475.jpeg_700bbf12_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3476.jpeg_7687d35a_2K.jpg",
+      "webp": "IMG_3476.jpeg_7687d35a_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3477.jpeg_191372ab_2K.jpg",
+      "webp": "IMG_3477.jpeg_191372ab_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3478.jpeg_ee414aba_2K.jpg",
+      "webp": "IMG_3478.jpeg_ee414aba_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3481.jpeg_cb26e682_2K.jpg",
+      "webp": "IMG_3481.jpeg_cb26e682_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3482.jpeg_a0e9b142_2K.jpg",
+      "webp": "IMG_3482.jpeg_a0e9b142_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3483.jpeg_ea61c34c_2K.jpg",
+      "webp": "IMG_3483.jpeg_ea61c34c_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3484.jpeg_35d7c0e8_2K.jpg",
+      "webp": "IMG_3484.jpeg_35d7c0e8_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3485.jpeg_8e0d5291_2K.jpg",
+      "webp": "IMG_3485.jpeg_8e0d5291_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3486.jpeg_0f288a47_2K.jpg",
+      "webp": "IMG_3486.jpeg_0f288a47_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3487.jpeg_943bf97c_2K.jpg",
+      "webp": "IMG_3487.jpeg_943bf97c_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3488.jpeg_86c17514_2K.jpg",
+      "webp": "IMG_3488.jpeg_86c17514_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3489.jpeg_0d99c083_2K.jpg",
+      "webp": "IMG_3489.jpeg_0d99c083_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3490.jpeg_e25668dd_2K.jpg",
+      "webp": "IMG_3490.jpeg_e25668dd_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3491.jpeg_b26e55f1_2K.jpg",
+      "webp": "IMG_3491.jpeg_b26e55f1_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3492.jpeg_ee604122_2K.jpg",
+      "webp": "IMG_3492.jpeg_ee604122_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3493.jpeg_610d8134_2K.jpg",
+      "webp": "IMG_3493.jpeg_610d8134_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3494.jpeg_b3d7dd70_2K.jpg",
+      "webp": "IMG_3494.jpeg_b3d7dd70_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3495.jpeg_cca18f33_2K.jpg",
+      "webp": "IMG_3495.jpeg_cca18f33_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3496.jpeg_0fb3e7b1_2K.jpg",
+      "webp": "IMG_3496.jpeg_0fb3e7b1_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3497.jpeg_e92f7ecb_2K.jpg",
+      "webp": "IMG_3497.jpeg_e92f7ecb_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3498.jpeg_f8e1d7d1_2K.jpg",
+      "webp": "IMG_3498.jpeg_f8e1d7d1_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3499.jpeg_621a132a_2K.jpg",
+      "webp": "IMG_3499.jpeg_621a132a_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3500.jpeg_3d9bbca5_2K.jpg",
+      "webp": "IMG_3500.jpeg_3d9bbca5_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3501.jpeg_7a424278_2K.jpg",
+      "webp": "IMG_3501.jpeg_7a424278_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3502.jpeg_61537c3f_2K.jpg",
+      "webp": "IMG_3502.jpeg_61537c3f_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3503.jpeg_d9365ebb_2K.jpg",
+      "webp": "IMG_3503.jpeg_d9365ebb_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3504.jpeg_6d887ca9_2K.jpg",
+      "webp": "IMG_3504.jpeg_6d887ca9_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3505.jpeg_f6ff4bca_2K.jpg",
+      "webp": "IMG_3505.jpeg_f6ff4bca_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3506.jpeg_de51f1da_2K.jpg",
+      "webp": "IMG_3506.jpeg_de51f1da_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3507.jpeg_50e6d139_2K.jpg",
+      "webp": "IMG_3507.jpeg_50e6d139_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3508.jpeg_0bf8342f_2K.jpg",
+      "webp": "IMG_3508.jpeg_0bf8342f_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3509.jpeg_2db7e42f_2K (1).jpg",
+      "webp": "IMG_3509.jpeg_2db7e42f_2K-1.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3510.jpeg_813bd97d_2K.jpg",
+      "webp": "IMG_3510.jpeg_813bd97d_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3511.jpeg_c1771bc3_2K.jpg",
+      "webp": "IMG_3511.jpeg_c1771bc3_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3512.jpeg_d586353a_2K.jpg",
+      "webp": "IMG_3512.jpeg_d586353a_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3513.jpeg_73586223_2K.jpg",
+      "webp": "IMG_3513.jpeg_73586223_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3514.jpeg_fe60f707_2K.jpg",
+      "webp": "IMG_3514.jpeg_fe60f707_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3515.jpeg_87f5b023_2K.jpg",
+      "webp": "IMG_3515.jpeg_87f5b023_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3517.jpeg_62c12efc_2K.jpg",
+      "webp": "IMG_3517.jpeg_62c12efc_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3518.jpeg_d633dfa9_2K.jpg",
+      "webp": "IMG_3518.jpeg_d633dfa9_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3519.jpeg_00d8d8ca_2K.jpg",
+      "webp": "IMG_3519.jpeg_00d8d8ca_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3520.jpeg_d03d9669_2K.jpg",
+      "webp": "IMG_3520.jpeg_d03d9669_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3522.jpeg_9e10638e_2K.jpg",
+      "webp": "IMG_3522.jpeg_9e10638e_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3524.jpeg_9080f0aa_2K.jpg",
+      "webp": "IMG_3524.jpeg_9080f0aa_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3525.jpeg_13308327_2K.jpg",
+      "webp": "IMG_3525.jpeg_13308327_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3527.jpeg_612d70f0_2K.jpg",
+      "webp": "IMG_3527.jpeg_612d70f0_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3528.jpeg_f3d025fd_2K (1).jpg",
+      "webp": "IMG_3528.jpeg_f3d025fd_2K-1.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3529.jpeg_3c19d624_2K.jpg",
+      "webp": "IMG_3529.jpeg_3c19d624_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3530.jpeg_cad58ff1_2K.jpg",
+      "webp": "IMG_3530.jpeg_cad58ff1_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3533.jpeg_648ed603_2K.jpg",
+      "webp": "IMG_3533.jpeg_648ed603_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3534.jpeg_af602915_2K.jpg",
+      "webp": "IMG_3534.jpeg_af602915_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3535.jpeg_bab8b353_2K.jpg",
+      "webp": "IMG_3535.jpeg_bab8b353_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3536.jpeg_b3e3356a_2K.jpg",
+      "webp": "IMG_3536.jpeg_b3e3356a_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3537.jpeg_5ee35c69_2K.jpg",
+      "webp": "IMG_3537.jpeg_5ee35c69_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3538.jpeg_dec1cab5_2K.jpg",
+      "webp": "IMG_3538.jpeg_dec1cab5_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3539.jpeg_0519845a_2K.jpg",
+      "webp": "IMG_3539.jpeg_0519845a_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3540.jpeg_bb158c52_2K.jpg",
+      "webp": "IMG_3540.jpeg_bb158c52_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3541.jpeg_156b1d03_2K.jpg",
+      "webp": "IMG_3541.jpeg_156b1d03_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3542.jpeg_a0c27c41_2K.jpg",
+      "webp": "IMG_3542.jpeg_a0c27c41_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3544.jpeg_951d5638_2K.jpg",
+      "webp": "IMG_3544.jpeg_951d5638_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3545.jpeg_dfdb870b_2K.jpg",
+      "webp": "IMG_3545.jpeg_dfdb870b_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "IMG_3546.jpeg_006dcf45_2K.jpg",
+      "webp": "IMG_3546.jpeg_006dcf45_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "Jewelry_product_photography_inst#U2026_2aab054d_2K (1).jpg",
+      "webp": "Jewelry_product_photography_instU2026_2aab054d_2K-1.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "Jewelry_product_photography_inst#U2026_2aab054d_2K.jpg",
+      "webp": "Jewelry_product_photography_instU2026_2aab054d_2K.webp",
+      "width": 1200,
+      "height": 1200
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_0479b211_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_0479b211_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_092e9192_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_092e9192_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_2625bf5e_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_2625bf5e_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_289ced3a_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_289ced3a_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_2ec42eec_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_2ec42eec_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_34fd1f60_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_34fd1f60_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_3714efa8_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_3714efa8_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_3849aef0_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_3849aef0_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_3e69b622_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_3e69b622_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_3e9a4ccf_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_3e9a4ccf_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_43de7677_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_43de7677_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_482e7836_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_482e7836_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_4ba79493_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_4ba79493_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_59d7cf3f_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_59d7cf3f_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_5afe290f_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_5afe290f_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_5b2f67c6_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_5b2f67c6_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_606858ac_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_606858ac_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_617f4b01_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_617f4b01_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_635ac7b4_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_635ac7b4_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_674f0621_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_674f0621_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_6d9e1788_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_6d9e1788_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_6eefaa53_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_6eefaa53_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_778ef78f_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_778ef78f_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_793fef7c_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_793fef7c_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_7accb9ee_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_7accb9ee_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_7adf7c09_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_7adf7c09_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_7c98f8d7_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_7c98f8d7_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_7fa353d7_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_7fa353d7_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_84540271_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_84540271_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_8bd7c902_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_8bd7c902_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_9a7812c6_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_9a7812c6_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_a8e277d2_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_a8e277d2_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_ab1c8b81_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_ab1c8b81_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_acb782a6_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_acb782a6_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_077a6199_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_077a6199_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_1943aa95_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_1943aa95_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_2a283cd3_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_2a283cd3_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_2c5571ed_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_2c5571ed_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_455bd9a6_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_455bd9a6_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_5c508c96_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_5c508c96_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_7b5611f5_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_7b5611f5_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_7db9295c_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_7db9295c_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_7dc51afc_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_7dc51afc_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_852e8e9c_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_852e8e9c_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_862e09b4_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_862e09b4_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_8e6f46d0_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_8e6f46d0_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_98c0f4f5_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_98c0f4f5_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_ad669563_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_ad669563_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_af036a74_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_af036a74_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_d3d01b49_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_d3d01b49_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_d79c9a7e_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_d79c9a7e_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_da3c6b1d_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_da3c6b1d_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_e3849c20_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_e3849c20_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_adv#U2026_e4121433_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_advU2026_e4121433_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_b8d193a9_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_b8d193a9_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_c0b3bc49_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_c0b3bc49_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_c8a1b62b_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_c8a1b62b_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_c903ed56_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_c903ed56_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_c9a62c4f_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_c9a62c4f_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_d31e6966_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_d31e6966_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_d398a96d_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_d398a96d_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_d6588123_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_d6588123_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_d791214f_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_d791214f_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_daa5fac9_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_daa5fac9_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_e5c56be6_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_e5c56be6_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_eb1f9e24_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_eb1f9e24_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Model_wearing_luxury_jewelry_f811f3bc_2K.jpg",
+      "webp": "Model_wearing_luxury_jewelry_f811f3bc_2K.webp",
+      "width": 1200,
+      "height": 670
+    },
+    {
+      "original": "Photographing_luxury_jewelry_pro#U2026_116ed115_2K.jpg",
+      "webp": "Photographing_luxury_jewelry_proU2026_116ed115_2K.webp",
+      "width": 1200,
+      "height": 1200
+    }
+  ]
+}
