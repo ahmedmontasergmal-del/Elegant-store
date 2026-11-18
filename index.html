@@ -1220,3 +1220,11 @@ window.addEventListener('DOMContentLoaded',()=>{let seen=false;try{seen=sessionS
 
 </script>
 </body></html>
+<style>
+/* MOBILE NAVIGATION SCROLL FIX: keep bag and favorites in normal document flow */
+@media(max-width:760px){
+  header.nav,.nav{position:static!important;top:auto!important;bottom:auto!important;inset:auto!important;transform:none!important}
+  .navtools{position:static!important;align-self:auto!important;inset:auto!important;transform:none!important;flex:0 1 auto!important}
+  .navtools .iconbtn{position:relative!important}
+}
+</style>
