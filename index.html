@@ -952,6 +952,144 @@ header.nav{position:-webkit-sticky!important;position:sticky!important;top:0!imp
  .card-open .carddesc{font-size:10px;min-height:0}
 }
 @media(max-width:390px){.detail-main-image{height:52vh}.detail-copy{padding-inline:16px}}
+
+/* Luxury product detail — refined ivory, deep emerald and champagne gold */
+.product-detail-overlay{
+ background:rgba(5,28,29,.78);
+ backdrop-filter:blur(9px);
+ padding:clamp(12px,3vw,30px);
+}
+.product-detail-panel{
+ background:#fbfaf6;
+ border:1px solid #d7c69f;
+ border-radius:8px;
+ box-shadow:0 30px 100px rgba(0,20,21,.48);
+ overflow:auto;
+}
+.detail-layout{background:#fbfaf6}
+.detail-gallery{
+ background:linear-gradient(145deg,#e9f0e9 0%,#dce9e2 52%,#f1eadb 100%);
+ border-inline-start:1px solid #d8dfd4;
+ position:relative;
+}
+.detail-gallery:before{
+ content:"ELEGANT  ·  FINE DETAILS";
+ align-self:center;
+ order:3;
+ color:#8e7950;
+ font:10px 'Playfair Display',serif;
+ letter-spacing:3px;
+ opacity:.8;
+}
+.detail-main-image{
+ background:radial-gradient(ellipse at center,#fff 0%,#f8f8f2 58%,#e8eee7 100%);
+ border:1px solid rgba(185,154,98,.28);
+ box-shadow:0 14px 35px rgba(20,58,51,.08);
+}
+.detail-thumbs button{
+ border:1px solid #d7d8c9;
+ border-radius:3px;
+ background:#fff;
+ transition:border-color .2s,transform .2s,box-shadow .2s;
+}
+.detail-thumbs button:hover{transform:translateY(-2px);border-color:#b99a62}
+.detail-thumbs button.active{
+ border:2px solid #b99a62;
+ box-shadow:0 0 0 2px rgba(185,154,98,.16);
+}
+.detail-copy{
+ background:linear-gradient(160deg,#fffefa 0%,#fbfaf6 72%,#f4f5ee 100%);
+ align-items:stretch;
+}
+.detail-kicker{
+ color:#a1844d;
+ letter-spacing:3px;
+ font-size:10px;
+ padding-bottom:13px;
+ border-bottom:1px solid #e8dfcc;
+ width:100%;
+}
+.detail-copy .cardmeta{
+ color:#21827b;
+ font-size:10px;
+ letter-spacing:2px;
+ margin-top:8px;
+}
+.detail-copy h2{
+ color:#123f40;
+ font:600 36px Cairo,sans-serif;
+ line-height:1.5;
+}
+.detail-description{color:#687b75;line-height:2.15}
+.detail-highlight{
+ background:linear-gradient(120deg,#edf5f0,#f5f1e6);
+ border-inline-start:3px solid #b99a62;
+ border-radius:3px;
+ box-shadow:0 7px 20px rgba(23,66,58,.045);
+}
+.detail-highlight>span{color:#b18f50}
+.detail-highlight b{color:#164b48}
+.detail-highlight small{color:#71817a}
+.detail-price{
+ color:#9a7940;
+ font-size:21px;
+ padding:12px 0;
+ border-bottom:1px solid #e8dfcc;
+}
+.detail-add{
+ background:linear-gradient(110deg,#0b3b3c,#17615b);
+ border:1px solid #b99a62;
+ border-radius:3px;
+ padding:17px 15px;
+ letter-spacing:.2px;
+ box-shadow:0 9px 22px rgba(8,55,53,.15);
+ transition:transform .2s,box-shadow .2s,background .2s;
+}
+.detail-add:hover{
+ background:linear-gradient(110deg,#145653,#21847b);
+ transform:translateY(-2px);
+ box-shadow:0 13px 26px rgba(8,55,53,.2);
+}
+.detail-note{color:#81918a;line-height:2;margin-top:13px}
+.detail-back{
+ color:#947746;
+ border-bottom:1px solid #d9c8a4;
+ transition:color .2s;
+}
+.detail-back:hover{color:#174e4b}
+.detail-close{
+ background:rgba(255,254,250,.96);
+ border:1px solid #d8c69c;
+ color:#174b49;
+ box-shadow:0 4px 14px rgba(10,45,43,.12);
+}
+.detail-close:hover{background:#174b49;color:#fff}
+@media(max-width:760px){
+ .product-detail-overlay{background:rgba(5,28,29,.76);backdrop-filter:blur(6px)}
+ .product-detail-panel{
+  border:1px solid #cbb582;
+  border-bottom:0;
+  border-radius:18px 18px 0 0;
+  box-shadow:0 -15px 55px rgba(0,20,21,.28);
+ }
+ .detail-gallery{
+  border-inline-start:0;
+  border-bottom:1px solid #d9dfd2;
+  padding:18px 16px 14px;
+ }
+ .detail-gallery:before{font-size:8px;letter-spacing:2.5px}
+ .detail-main-image{
+  border-radius:4px;
+  height:min(52vh,360px);
+  min-height:230px;
+ }
+ .detail-copy{padding:20px 20px 28px}
+ .detail-copy h2{font-size:27px}
+ .detail-price{font-size:19px}
+ .detail-add{padding:15px}
+ .detail-close{left:13px;top:13px;width:38px;height:38px}
+}
+
 </style>
 </head>
 <body>
