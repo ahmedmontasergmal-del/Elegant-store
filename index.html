@@ -1268,4 +1268,27 @@ initElegantReveals();
 window.addEventListener('DOMContentLoaded',()=>{let seen=false;try{seen=sessionStorage.getItem('elegant-quiz-seen')==='1'}catch(e){}if(!seen)setTimeout(()=>{if(!document.getElementById('quizOverlay').classList.contains('open'))startQuiz()},650)});
 
 </script>
+
+<script id="enforce-header-scroll-away">
+/* The announcement strip and complete site header must leave the viewport on scroll. */
+(function () {
+  function releaseHeaderFromViewport() {
+    var topBar = document.querySelector('body > .announcement');
+    var header = document.querySelector('body > header.nav');
+    [topBar, header].forEach(function (el) {
+      if (!el) return;
+      el.style.setProperty('position', 'static', 'important');
+      el.style.setProperty('top', 'auto', 'important');
+      el.style.setProperty('bottom', 'auto', 'important');
+      el.style.setProperty('inset', 'auto', 'important');
+      el.style.setProperty('transform', 'none', 'important');
+    });
+  }
+  releaseHeaderFromViewport();
+  window.addEventListener('DOMContentLoaded', releaseHeaderFromViewport, { once: true });
+  window.addEventListener('pageshow', releaseHeaderFromViewport);
+  window.addEventListener('scroll', releaseHeaderFromViewport, { passive: true });
+  window.addEventListener('resize', releaseHeaderFromViewport, { passive: true });
+})();
+</script>
 </body></html>
