@@ -968,6 +968,20 @@ a{color:#e2c17a}
   header.nav .navtools .iconbtn { position: relative !important; }
 }
 </style>
+
+<style id="force-normal-flow-header">
+/* Keep the complete header, favorites and bag in document flow on every screen */
+html body header.nav,
+html body header.nav .navtools,
+html body header.nav .navtools .iconbtn {
+  position: static !important;
+  inset: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+}
+html body header.nav { height: auto !important; min-height: 78px; }
+</style>
 </head>
 <body>
 <a class="skip-link" href="#shop">تخطي إلى المحتوى الرئيسي</a>
