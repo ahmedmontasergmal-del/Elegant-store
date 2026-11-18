@@ -952,7 +952,23 @@ a{color:#e2c17a}
  .card-open .carddesc{font-size:10px;min-height:0}
 }
 @media(max-width:390px){.detail-main-image{height:52vh}.detail-copy{padding-inline:16px}}
-</style></head>
+</style><style>
+/* Mobile: keep the shopping bag and favorites in normal page flow */
+@media (max-width: 760px) {
+  html, body { overflow-x: hidden !important; overflow-y: visible !important; }
+  header.nav, header.nav .navtools {
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+  header.nav { display: flex !important; flex-wrap: wrap !important; }
+  header.nav .navtools { align-self: auto !important; }
+  header.nav .navtools .iconbtn { position: relative !important; }
+}
+</style>
+</head>
 <body>
 <a class="skip-link" href="#shop">تخطي إلى المحتوى الرئيسي</a>
 <div class="announcement">اختيارات استثنائية • تفاصيل تصنع الفرق • ELEGANT</div>
@@ -1220,11 +1236,3 @@ window.addEventListener('DOMContentLoaded',()=>{let seen=false;try{seen=sessionS
 
 </script>
 </body></html>
-<style>
-/* MOBILE NAVIGATION SCROLL FIX: keep bag and favorites in normal document flow */
-@media(max-width:760px){
-  header.nav,.nav{position:static!important;top:auto!important;bottom:auto!important;inset:auto!important;transform:none!important}
-  .navtools{position:static!important;align-self:auto!important;inset:auto!important;transform:none!important;flex:0 1 auto!important}
-  .navtools .iconbtn{position:relative!important}
-}
-</style>
