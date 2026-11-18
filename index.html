@@ -970,28 +970,35 @@ a{color:#e2c17a}
 </style>
 
 <style id="force-normal-flow-header">
-/* Header must occupy its normal place in the page and scroll away with content.
-   Relative positioning preserves the mobile dropdown's positioning context. */
-html body > header.nav {
-  position: relative !important;
-  inset: auto !important;
-  top: auto !important;
-  bottom: auto !important;
-  transform: none !important;
-  z-index: 20;
-  height: auto !important;
-  min-height: 78px;
+/* Keep the complete top area in ordinary document flow on desktop and mobile.
+   No sticky/fixed/relative positioning: it must scroll away with the page. */
+html, body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
 }
+html body > .announcement,
+html body > header.nav,
 html body > header.nav .navtools,
 html body > header.nav .navtools .iconbtn {
-  position: relative !important;
+  position: static !important;
   inset: auto !important;
   top: auto !important;
+  right: auto !important;
   bottom: auto !important;
+  left: auto !important;
   transform: none !important;
+  z-index: auto !important;
+}
+html body > header.nav {
+  display: flex !important;
+  height: auto !important;
+  min-height: 78px !important;
 }
 @media (max-width:760px) {
-  html body > header.nav { min-height: 66px; }
+  html body > header.nav {
+    min-height: 66px !important;
+    flex-wrap: wrap !important;
+  }
 }
 </style>
 </head>
