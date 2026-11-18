@@ -1189,7 +1189,7 @@ function closeElegantLightbox(){
  if(elegantPreviousFocus&&elegantPreviousFocus.focus)elegantPreviousFocus.focus();
 }
 document.addEventListener('click',e=>{
- const image=e.target.closest('.cardimg img,.rough-tile img');
+ const image=e.target.closest('.rough-tile img');
  if(image){e.preventDefault();openElegantLightbox(image.currentSrc||image.src,image.alt);return}
  const hero=e.target.closest('.hero-art');
  if(hero){openElegantLightbox('./elegant-hero-upload.webp','ELEGANT · الواجهة الرئيسية');return}
