@@ -1172,6 +1172,63 @@ header.nav{position:-webkit-sticky!important;position:sticky!important;top:0!imp
 
 
 
+<style>
+/* ELEGANT 3D Atelier — subtle depth, responsive and reduced-motion friendly */
+.card{
+  --tilt-x:0deg;--tilt-y:0deg;
+  transform:perspective(1100px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translateY(0);
+  transform-style:preserve-3d;
+  will-change:transform;
+  transition:transform .22s ease,box-shadow .28s ease,border-color .28s ease;
+}
+.card:hover{
+  transform:perspective(1100px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translateY(-7px);
+  box-shadow:0 24px 48px rgba(9,54,52,.17),0 5px 14px rgba(9,54,52,.08);
+  border-color:#b9dcd3;
+}
+.cardimg{transform:translateZ(0);isolation:isolate}
+.cardimg:before{
+  content:"";position:absolute;inset:-40% -70%;z-index:2;pointer-events:none;
+  background:linear-gradient(112deg,transparent 38%,rgba(255,255,255,.32) 48%,rgba(255,255,255,.08) 53%,transparent 62%);
+  transform:translateX(-65%) rotate(8deg);transition:transform .75s cubic-bezier(.2,.7,.2,1);
+}
+.card:hover .cardimg:before{transform:translateX(65%) rotate(8deg)}
+.cardimg img{transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .5s ease}
+.card:hover .cardimg img{transform:scale(1.07) translateZ(12px);filter:saturate(1.13) contrast(1.025)}
+.cardbody{transform:translateZ(13px);position:relative}
+.card .badge{transform:translateZ(22px);box-shadow:0 5px 15px rgba(10,48,46,.10)}
+.goldbtn,.lightbtn,.add,.fullbtn,.iconbtn,.filter{
+  transition:transform .22s ease,box-shadow .22s ease,background .22s ease;
+}
+.goldbtn:hover,.lightbtn:hover,.add:hover,.fullbtn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 22px rgba(8,54,52,.18);
+}
+.goldbtn:active,.lightbtn:active,.add:active,.fullbtn:active,.iconbtn:active{
+  transform:translateY(1px) scale(.985);box-shadow:none;
+}
+.hero-art{transform-style:preserve-3d;position:relative}
+.hero-art:before{
+  content:"";position:absolute;inset:8% 10%;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 50%,rgba(183,231,220,.13),transparent 62%);
+  filter:blur(14px);animation:elegantGemGlow 7s ease-in-out infinite alternate;
+}
+@keyframes elegantGemGlow{from{opacity:.35;transform:scale(.92)}to{opacity:.9;transform:scale(1.08)}}
+.discovery-box{transform:perspective(900px) rotateX(1deg);transition:transform .35s ease,box-shadow .35s ease}
+.discovery-box:hover{transform:perspective(900px) rotateX(0) translateY(-5px);box-shadow:0 22px 45px rgba(0,0,0,.17),inset 0 0 35px rgba(168,222,215,.08)}
+.storyimg{transform:perspective(1000px) rotateY(-2deg);transition:transform .5s ease,box-shadow .5s ease}
+.storyimg:hover{transform:perspective(1000px) rotateY(0) translateY(-4px);box-shadow:22px 24px 0 #b9ddd4,0 24px 45px rgba(12,62,58,.13)}
+@media(max-width:760px){
+ .card,.card:hover{transform:none;will-change:auto}
+ .cardimg{height:205px}
+ .discovery-box,.discovery-box:hover,.storyimg,.storyimg:hover{transform:none}
+ .card:hover .cardimg img{transform:scale(1.035)}
+}
+@media(prefers-reduced-motion:reduce){
+ .card,.cardimg img,.cardimg:before,.hero-art:before,.discovery-box,.storyimg{animation:none!important;transition:none!important}
+ .card,.card:hover,.discovery-box,.discovery-box:hover,.storyimg,.storyimg:hover{transform:none!important}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#shop">تخطي إلى المحتوى الرئيسي</a>
@@ -1440,4 +1497,27 @@ window.addEventListener('DOMContentLoaded',()=>{let seen=false;try{seen=sessionS
 
 </script>
 
+<script>
+/* Pointer-driven 3D product cards (desktop only; touch devices stay calm) */
+(function initElegant3D(){
+  const finePointer=window.matchMedia&&window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!finePointer||reduced)return;
+  document.addEventListener('pointermove',function(event){
+    const card=event.target.closest('.card');
+    if(!card)return;
+    const rect=card.getBoundingClientRect();
+    const x=(event.clientX-rect.left)/rect.width;
+    const y=(event.clientY-rect.top)/rect.height;
+    card.style.setProperty('--tilt-y',((x-.5)*7).toFixed(2)+'deg');
+    card.style.setProperty('--tilt-x',((.5-y)*6).toFixed(2)+'deg');
+  },{passive:true});
+  document.addEventListener('pointerout',function(event){
+    const card=event.target.closest('.card');
+    if(!card||card.contains(event.relatedTarget))return;
+    card.style.setProperty('--tilt-x','0deg');
+    card.style.setProperty('--tilt-y','0deg');
+  });
+})();
+</script>
 </body></html>
