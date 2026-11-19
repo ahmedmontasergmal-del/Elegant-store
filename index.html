@@ -1229,6 +1229,63 @@ header.nav{position:-webkit-sticky!important;position:sticky!important;top:0!imp
  .card,.card:hover,.discovery-box,.discovery-box:hover,.storyimg,.storyimg:hover{transform:none!important}
 }
 </style>
+<style>
+/* GEMSTONE GUIDE — dimensional gemstone cards */
+.gem-guide-grid{perspective:1200px;align-items:stretch}
+.gem-guide-card{
+ --gem-x:0deg;--gem-y:0deg;
+ position:relative;isolation:isolate;
+ transform:perspective(1100px) rotateX(var(--gem-x)) rotateY(var(--gem-y)) translateY(0);
+ transform-style:preserve-3d;will-change:transform;
+ transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease,border-color .3s ease;
+}
+.gem-guide-card:before{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.0;
+ background:radial-gradient(circle at 50% 0%,rgba(229,196,124,.22),transparent 62%);
+ transition:opacity .3s ease;
+}
+.gem-guide-card:after{
+ width:125px;height:125px;left:-28px;top:-28px;
+ border:1px solid #d8b66f;opacity:.24;
+ transform:rotate(45deg) translateZ(8px);
+ box-shadow:0 0 0 10px rgba(198,161,91,.035),0 0 30px rgba(198,161,91,.08);
+ transition:transform .5s ease,opacity .3s ease;
+}
+.gem-guide-card:hover{
+ transform:perspective(1100px) rotateX(var(--gem-x)) rotateY(var(--gem-y)) translateY(-8px);
+ border-color:#d2ad64!important;
+ box-shadow:0 24px 48px rgba(0,0,0,.45),0 0 24px rgba(198,161,91,.12)!important;
+}
+.gem-guide-card:hover:before{opacity:1}
+.gem-guide-card:hover:after{transform:rotate(58deg) translate(7px,7px) translateZ(12px);opacity:.48}
+.gem-guide-icon{
+ position:relative;display:grid;place-items:center;
+ width:58px;height:58px;margin:0 0 15px;
+ border:1px solid currentColor;border-radius:50%;
+ background:radial-gradient(circle at 35% 25%,rgba(255,255,255,.15),rgba(198,161,91,.04) 58%,transparent 70%);
+ box-shadow:inset 0 0 18px rgba(255,255,255,.05),0 9px 20px rgba(0,0,0,.18);
+ transform:translateZ(24px);
+ transition:transform .35s ease,box-shadow .35s ease;
+}
+.gem-guide-card:hover .gem-guide-icon{
+ transform:translateZ(38px) rotateY(12deg) rotateX(-7deg) scale(1.08);
+ box-shadow:inset 0 0 22px rgba(255,255,255,.1),0 12px 26px rgba(0,0,0,.3),0 0 18px currentColor;
+}
+.gem-guide-card .gem-en,.gem-guide-card h3,.gem-guide-card>p,.gem-guide-card .gem-meta{
+ position:relative;transform:translateZ(12px)
+}
+.gem-guide-card .gem-meta{transition:border-color .25s ease}
+.gem-guide-card:hover .gem-meta{border-color:#9c793f!important}
+.gem-guide-note{position:relative}
+@media(max-width:760px){
+ .gem-guide-card,.gem-guide-card:hover{transform:none;will-change:auto}
+ .gem-guide-card:hover .gem-guide-icon{transform:scale(1.04)}
+}
+@media(prefers-reduced-motion:reduce){
+ .gem-guide-card,.gem-guide-card:before,.gem-guide-card:after,.gem-guide-icon{transition:none!important;animation:none!important}
+ .gem-guide-card,.gem-guide-card:hover,.gem-guide-card:hover .gem-guide-icon{transform:none!important}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#shop">تخطي إلى المحتوى الرئيسي</a>
@@ -1518,6 +1575,25 @@ window.addEventListener('DOMContentLoaded',()=>{let seen=false;try{seen=sessionS
     card.style.setProperty('--tilt-x','0deg');
     card.style.setProperty('--tilt-y','0deg');
   });
+})();
+</script>
+<script>
+/* Interactive depth for gemstone guide cards */
+(function initGemGuide3D(){
+ const fine=window.matchMedia&&window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+ const reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!fine||reduced)return;
+ document.addEventListener('pointermove',e=>{
+  const card=e.target.closest('.gem-guide-card');if(!card)return;
+  const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+  card.style.setProperty('--gem-y',((x-.5)*8).toFixed(2)+'deg');
+  card.style.setProperty('--gem-x',((.5-y)*7).toFixed(2)+'deg');
+ },{passive:true});
+ document.addEventListener('pointerout',e=>{
+  const card=e.target.closest('.gem-guide-card');
+  if(!card||card.contains(e.relatedTarget))return;
+  card.style.setProperty('--gem-x','0deg');card.style.setProperty('--gem-y','0deg');
+ });
 })();
 </script>
 </body></html>
